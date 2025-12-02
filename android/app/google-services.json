@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "424596460320",
+    "project_id": "ktgroup-7c49b",
+    "storage_bucket": "ktgroup-7c49b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:0d8ca5fd08b2685b3c7d45",
+        "android_client_info": {
+          "package_name": "com.cshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:0a4c33a3c532e9153c7d45",
+        "android_client_info": {
+          "package_name": "com.demorn77"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:dc6c257c8f4bf3933c7d45",
+        "android_client_info": {
+          "package_name": "com.eSalesKimTin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:52ad3128e907c13d3c7d45",
+        "android_client_info": {
+          "package_name": "com.e_delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:cfcf61800c2e390b3c7d45",
+        "android_client_info": {
+          "package_name": "com.esales"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:e1ff9740ede8894b3c7d45",
+        "android_client_info": {
+          "package_name": "com.npladmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424596460320:android:1c2d15009f1113173c7d45",
+        "android_client_info": {
+          "package_name": "com.nplquantri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4mIQOErED5TA3h0swKgmNKdlyjSyV8bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

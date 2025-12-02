@@ -1,3 +1,33 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["react-native", "jest"],
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@context/*": ["src/context/*"],
+      "@screens/*": ["src/modules/*"],
+      "@routes/*": ["src/modules/routes/*"],
+      "@store/*": ["src/store/*"],
+      "@themes/*": ["src/themes/*"],
+      "@utils/*": ["src/utils/*"],
+      "@resolutions/*": ["src/utils/resolutions/*"],
+      "@api/*": ["src/action/Api/*"],
+      "@assets/*": ["src/assets/*"],
+      "@storage/*": ["src/storage/*"],
+      "@constants/*": ["src/constants/*"],
+      "@svgImg/*": ["src/svgImg/*"],
+      "@navigation/*": ["src/modules/navigation/*"],
+      "@services/*": ["src/services/*"]
+    }
+  },
+  "include": ["src", "index.js", "index.ts", "index.tsx"]
 }
