@@ -19,24 +19,24 @@ import {
 } from 'react-native';
 
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {noData, plus_white} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
-import {fetchListCustomers} from 'store/accApproval_Signature/thunk';
+import routes from '@routes';
+import {noData, plus_white} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
+import {fetchListCustomers} from '@store/accApproval_Signature/thunk';
 import {
   Button,
   HeaderBack,
   LoadingModal,
   SearchBar,
   SearchModal,
-} from 'components';
+} from '@components';
 import {
   fetchListCategoryTypeCusClosed,
   fetchListCusCloseMove,
-} from 'store/accCus_Closed_Move/thunk';
-import {fetchApiuser_GetCurrentUser, fetchListCustomerByUserID} from 'store/accAuth/thunk';
-import { updateListEntryCreditLimit } from 'store/accCredit_Limit/slide';
-import { scale } from 'utils/resolutions';
+} from '@store/accCus_Closed_Move/thunk';
+import {fetchApiuser_GetCurrentUser, fetchListCustomerByUserID} from '@store/accAuth/thunk';
+import { updateListEntryCreditLimit } from '@store/accCredit_Limit/slide';
+import { scale } from '@utils/resolutions';
 
 const {height} = Dimensions.get('window');
 const CustomerClosedMoveScreen = () => {

@@ -6,12 +6,12 @@ import { SvgXml } from "react-native-svg";
 import { View, Text, StyleSheet, Platform, ScrollView, Dimensions, FlatList } from "react-native";
 
 import { Button } from "../buttons";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { InputDefault, CardModalSelect } from "components";
-import { close_red, close_white } from "svgImg";
-import { fetchListItems, fetchListWarehouseFactory } from "store/accInventory/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { InputDefault, CardModalSelect } from "@components";
+import { close_red, close_white } from "@svgImg";
+import { fetchListItems, fetchListWarehouseFactory } from "@store/accInventory/thunk";
 
 const { height } = Dimensions.get('window');
 

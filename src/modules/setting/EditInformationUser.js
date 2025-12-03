@@ -8,8 +8,8 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 import styles from './styles';
 import {colors} from '@themes';
-import {fetchApiChangeInfo, fetchChangePass} from 'store/accAuth/thunk';
-import {translateLang} from 'store/accLanguages/slide';
+import {fetchApiChangeInfo, fetchChangePass} from '@store/accAuth/thunk';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   LoadingModal,
   HeaderBack,

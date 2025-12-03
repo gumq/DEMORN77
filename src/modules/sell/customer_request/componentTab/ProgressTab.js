@@ -1,6 +1,6 @@
 import React from "react";
 import moment from "moment";
-import { colors } from "themes";
+import { colors } from "@themes";
 import { stylesProgress } from "../styles";
 import { View, Text, FlatList } from "react-native";
 

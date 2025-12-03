@@ -4,8 +4,8 @@ import React from 'react';
 import {View, Text, ScrollView, StyleSheet, Dimensions} from 'react-native';
 import {PieChart, BarChart, XAxis, YAxis} from 'react-native-svg-charts';
 import {Rect, G, Text as SvgText, Line, Svg} from 'react-native-svg';
-import {colors, fontSize} from 'themes';
-import {scale} from 'utils/resolutions';
+import {colors, fontSize} from '@themes';
+import {scale} from '@utils/resolutions';;
 
 const deviceWidth = Dimensions.get('window').width;
 const chartColors = [

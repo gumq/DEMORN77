@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 
 import { scale, hScale } from '@resolutions';
-import { colors, fontSize } from 'themes';
+import { colors, fontSize } from '@themes';
 import { arrow_blue } from '@svgImg';
 import { Button } from '../buttons';
 import { isIphoneX } from 'react-native-iphone-x-helper';

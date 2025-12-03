@@ -13,11 +13,11 @@ import {
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import Modal from 'react-native-modal';
 
-import {edit} from 'svgImg';
-import routes from 'modules/routes';
+import {edit} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {DetailTab, ProgressTab} from './componentTab';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   Button,
   HeaderBack,
@@ -26,9 +26,9 @@ import {
   RadioButton,
   TabsHeaderDevices,
 } from '@components';
-import {fetchDetailProductQuote} from 'store/accProduct_Quote/thunk';
-import {ApiGeneralApprovals_ApprovalList} from 'action/Api';
-import {scale} from 'utils/resolutions';
+import {fetchDetailProductQuote} from '@store/accProduct_Quote/thunk';
+import {ApiGeneralApprovals_ApprovalList} from '@api';
+import {scale} from '@utils/resolutions';;
 
 const DetailProductQuoteScreen = ({route, item}) => {
   const itemData = item || route?.params?.item;

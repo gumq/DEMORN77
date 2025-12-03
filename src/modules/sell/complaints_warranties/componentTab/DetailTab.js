@@ -5,13 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { View, Text, FlatList } from 'react-native';
 
 import { stylesDetail, styles } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, RenderImage } from "components";
-import { fetchDetailComplaintWarranties, fetchListSOByCustomer } from "store/acc_Complaint_Warranties/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, RenderImage } from "@components";
+import { fetchDetailComplaintWarranties, fetchListSOByCustomer } from "@store/acc_Complaint_Warranties/thunk";
 import { ModalAccept, ModalAddSO } from "../modalForm";
 import { SvgXml } from "react-native-svg";
-import { arrow_down_big, arrow_next_gray, trash_22 } from "svgImg";
-import { ApiComplaints_DeleteProfile } from "action/Api";
+import { arrow_down_big, arrow_next_gray, trash_22 } from "@svgImg";
+import { ApiComplaints_DeleteProfile } from "@api";
 
 const DetailTab = ({ detailComplaintWarraties }) => {
     const languageKey = useSelector(translateLang);

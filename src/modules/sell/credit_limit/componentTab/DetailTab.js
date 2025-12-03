@@ -6,14 +6,14 @@
 // import {View, Text} from 'react-native';
 
 // import {stylesDetail, stylesFormCredit} from '../styles';
-// import {translateLang} from 'store/accLanguages/slide';
+// import {translateLang} from '@store/accLanguages/slide';
 // import {
 //   arrow_down_big,
 //   arrow_next_gray,
 //   radio_active_disable,
 //   radio_disable,
-// } from 'svgImg';
-// import {Button, RenderImage, RenderImageZoomView} from 'components';
+// } from '@svgImg';
+// import {Button, RenderImage, RenderImageZoomView} from '@components';
 
 // const DetailTab = ({detailCreditLimit, itemData}) => {
 //   const languageKey = useSelector(translateLang);
@@ -544,20 +544,20 @@ import {useSelector} from 'react-redux';
 import {View, Text, TouchableOpacity, Linking, Alert} from 'react-native';
 
 import {stylesDetail, stylesFormCredit} from '../styles';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   arrow_down_big,
   arrow_next_gray,
   radio_active_disable,
   radio_disable,
   downFile,
-} from 'svgImg';
+} from '@svgImg';
 import {
   Button,
   ModalProfileCustomerFile,
   RenderImage,
   RenderImageZoomView,
-} from 'components';
+} from '@components';
 import GuaranteeList from './GuaranteeList';
 
 const DetailTab = ({detailCreditLimit, itemData, currentDoc}) => {

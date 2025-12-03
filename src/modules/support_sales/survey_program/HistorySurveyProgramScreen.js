@@ -6,9 +6,9 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {View, StatusBar, LogBox} from 'react-native';
 
 import {stylesHistory} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {HeaderBack, LoadingModal, SurveyChart} from 'components';
-import {fetchDataHistorySurvey} from 'store/accSurvey_Program/thunk';
+import {translateLang} from '@store/accLanguages/slide';
+import {HeaderBack, LoadingModal, SurveyChart} from '@components';
+import {fetchDataHistorySurvey} from '@store/accSurvey_Program/thunk';
 
 const HistorySurveyProgramScreen = ({route}) => {
   const item = route?.params?.item;

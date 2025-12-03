@@ -8,14 +8,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, StatusBar, Alert, } from "react-native";
 
 import routes from "@routes";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { stylesFormOtherProposal, stylesDetail } from "./styles";
-import { fetchListDepartment, fetchListEntry } from "store/accCus_Requirement/thunk";
-import { close_blue } from "svgImg";
-import { ApiOtherProposals_Add, ApiOtherProposals_Edit, ApiOtherProposals_Submit } from "action/Api";
-import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, NotifierAlert, ModalSelectDate, AttachManyFile } from "components";
-import { fetchListDocumentTypes, fetchListReference } from "store/accHand_Over_Doc/thunk";
-import { fetchListUser } from "store/accApproval_Signature/thunk";
+import { fetchListDepartment, fetchListEntry } from "@store/accCus_Requirement/thunk";
+import { close_blue } from "@svgImg";
+import { ApiOtherProposals_Add, ApiOtherProposals_Edit, ApiOtherProposals_Submit } from "@api";
+import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, NotifierAlert, ModalSelectDate, AttachManyFile } from "@components";
+import { fetchListDocumentTypes, fetchListReference } from "@store/accHand_Over_Doc/thunk";
+import { fetchListUser } from "@store/accApproval_Signature/thunk";
 
 const FormOtherProposaltScreen = ({ route }) => {
     const editProposal = route?.params?.editProposal

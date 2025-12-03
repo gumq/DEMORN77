@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 
 import { stylesStorageDetail } from '../styles';
 import { useSelector } from 'react-redux';
-import { translateLang } from 'store/accLanguages/slide';
-import { RenderImage } from 'components';
+import { translateLang } from '@store/accLanguages/slide';
+import { RenderImage } from '@components';
 
 const ProductDetail = ({ detailInventory }) => {
     const languageKey = useSelector(translateLang);

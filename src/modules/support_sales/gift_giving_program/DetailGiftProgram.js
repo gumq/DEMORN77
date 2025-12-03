@@ -9,14 +9,14 @@ import _ from 'lodash';
 
 import { styles, stylesDetail } from './styles'
 import { Customers, Details, Progress } from "./componentDetail";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { Button, HeaderBack, LoadingModal, NotifierAlert, TabsHeaderDevices } from "@components";
-import { fetchDetailGiftPrograms } from "store/accGift_Program/thunk";
-import { plus_white } from "svgImg";
+import { fetchDetailGiftPrograms } from "@store/accGift_Program/thunk";
+import { plus_white } from "@svgImg";
 import { SvgXml } from "react-native-svg";
 import CurrentCustomer from "./componentDetail/CurrentCustomer";
 import NewCustomer from "./componentDetail/NewCustomer";
-import { ApiPromotionGifts_Edit } from "action/Api";
+import { ApiPromotionGifts_Edit } from "@api";
 
 const DetailGiftProgram = ({ route }) => {
     const item = route?.params?.item;

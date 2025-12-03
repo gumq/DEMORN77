@@ -8,10 +8,10 @@
 // import {View, Text, StyleSheet, Platform} from 'react-native';
 
 // import {Button} from '../buttons';
-// import {colors, fontSize} from 'themes';
+// import {colors, fontSize} from '@themes';
 // import {hScale, scale} from '@resolutions';
-// import {callendar, close_blue} from 'svgImg';
-// import {translateLang} from 'store/accLanguages/slide';
+// import {callendar, close_blue} from '@svgImg';
+// import {translateLang} from '@store/accLanguages/slide';
 
 // const ModalSelectDate = ({
 //   title,
@@ -283,10 +283,10 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {callendar, close_blue} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+import {callendar, close_blue} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 
 const ModalSelectDate = ({
   title,

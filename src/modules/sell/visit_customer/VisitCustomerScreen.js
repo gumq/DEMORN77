@@ -8,15 +8,15 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, Text, LogBox, ScrollView, TouchableOpacity } from "react-native";
 
 import { styles } from "./styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, ModalSelectDate, SearchBar, TabsHeaderDevices } from "components";
-import { filterDay, plus_white, radio, radio_active } from "svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, ModalSelectDate, SearchBar, TabsHeaderDevices } from "@components";
+import { filterDay, plus_white, radio, radio_active } from "@svgImg";
 import AllPlan from "./componentTabList/AllPlan";
 import AccordingPlan from "./componentTabList/AccordingPlan";
 import OffLine from "./componentTabList/OffLine";
 import { NewCustomer, OffRouteVisit } from "./componentTab";
-import { fetchListVisitCustomer } from "store/accVisit_Customer/thunk";
-import { fetchListCustomerByUserID } from "store/accAuth/thunk";
+import { fetchListVisitCustomer } from "@store/accVisit_Customer/thunk";
+import { fetchListCustomerByUserID } from "@store/accAuth/thunk";
 
 const VisitCustomerScreen = () => {
     const navigation = useNavigation();

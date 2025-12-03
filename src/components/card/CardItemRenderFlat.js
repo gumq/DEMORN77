@@ -4,7 +4,7 @@ import { View, StyleSheet, Text } from 'react-native';
 
 import { scale } from "../../utils/resolutions";
 import { colors, fontSize } from "../../themes";
-import { translateLang } from 'store/accLanguages/slide';
+import { translateLang } from '@store/accLanguages/slide';
 
 const CardItemRenderFlat = ({
     status,

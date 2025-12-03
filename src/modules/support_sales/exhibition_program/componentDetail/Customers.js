@@ -8,11 +8,11 @@ import _, { groupBy } from 'lodash';
 import { View, Text, FlatList, ScrollView, TextInput } from 'react-native';
 
 import { stylesCustomers, stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, CardModalSelect, NotifierAlert, QuestionRenderer, RenderImage } from "components";
-import { ApiExhibitionRegistrations_Delete, ApiExhibitionRegistrations_Edit, ApiExhibitionRegistrations_EditImages, ApiExhibitionRegistrations_Submit, ApiUploadFile } from "action/Api";
-import { fetchDetailCustomerRegis, fetchDetailExhibitionPrograms } from "store/accExhibition_Programs/thunk";
-import { arrow_down_big, arrow_next_gray, noData, three_dot } from "svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, CardModalSelect, NotifierAlert, QuestionRenderer, RenderImage } from "@components";
+import { ApiExhibitionRegistrations_Delete, ApiExhibitionRegistrations_Edit, ApiExhibitionRegistrations_EditImages, ApiExhibitionRegistrations_Submit, ApiUploadFile } from "@api";
+import { fetchDetailCustomerRegis, fetchDetailExhibitionPrograms } from "@store/accExhibition_Programs/thunk";
+import { arrow_down_big, arrow_next_gray, noData, three_dot } from "@svgImg";
 
 const Customers = () => {
     const languageKey = useSelector(translateLang)

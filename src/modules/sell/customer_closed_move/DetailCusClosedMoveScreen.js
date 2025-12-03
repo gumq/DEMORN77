@@ -14,11 +14,11 @@ import {
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import Modal from 'react-native-modal';
 
-import {edit} from 'svgImg';
-import routes from 'modules/routes';
+import {edit} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {DetailTab, ProgressTab} from './componentTab';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   Button,
   HeaderBack,
@@ -27,10 +27,10 @@ import {
   RadioButton,
   TabsHeaderDevices,
 } from '@components';
-import {ApiGeneralApprovals_ApprovalList} from 'action/Api';
-import {fetchDetailCusCloseMove} from 'store/accCus_Closed_Move/thunk';
-import {fetchApiApprovalProcess_GetById} from 'store/accApproval_Signature/thunk';
-import {scale} from 'utils/resolutions';
+import {ApiGeneralApprovals_ApprovalList} from '@api';
+import {fetchDetailCusCloseMove} from '@store/accCus_Closed_Move/thunk';
+import {fetchApiApprovalProcess_GetById} from '@store/accApproval_Signature/thunk';
+import {scale} from '@utils/resolutions';;
 
 const DetailCusClosedMoveScreen = ({route, item}) => {
   const itemData = item || route?.params?.item;

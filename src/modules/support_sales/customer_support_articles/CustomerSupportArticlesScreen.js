@@ -8,14 +8,14 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, LogBox, Text, TouchableOpacity, FlatList, Image, ScrollView } from "react-native";
 
-import { colors } from "themes";
+import { colors } from "@themes";
 import { styles } from "./styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListMenu, fetchListPostType, fetchListSupportArticles } from "store/accCustomer_Support_Articles/thunk";
-import { arrow_right_blue } from "svgImg";
-import routes from "modules/routes";
-import { hScale } from "utils/resolutions";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListMenu, fetchListPostType, fetchListSupportArticles } from "@store/accCustomer_Support_Articles/thunk";
+import { arrow_right_blue } from "@svgImg";
+import routes from "@routes";
+import { hScale } from "@resolutions";
 
 const CustomerSupportArticlesScreen = () => {
     const dispatch = useDispatch();

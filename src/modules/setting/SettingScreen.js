@@ -36,11 +36,11 @@ import {
 import {updateUser} from '../../store/accAuth/slide';
 import {fetchInforCompany} from '../../store/accAuth/thunk';
 import {ApiauthenticationLogOut} from '../../action/Api';
-import {colors} from 'themes';
-import {hScale, scale} from 'utils/resolutions';
-import routes from 'modules/routes';
+import {colors} from '@themes';
+import {hScale, scale} from '@utils/resolutions';
+import routes from '@routes';
 import Modal from 'react-native-modal';
-import {fetchMenu} from 'store/accHome/thunk';
+import {fetchMenu} from '@store/accHome/thunk';
 const icons = {
   svgDX: svgDX,
   svgDMK: svgDMK,

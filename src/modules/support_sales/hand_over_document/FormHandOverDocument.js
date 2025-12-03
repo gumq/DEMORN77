@@ -9,14 +9,14 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {View, Text, ScrollView, StatusBar} from 'react-native';
 
 import routes from '@routes';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {stylesFormHandOverDocument} from './styles';
-import {arrow_down_big, close_blue} from 'svgImg';
+import {arrow_down_big, close_blue} from '@svgImg';
 import {
   ApiHandOverDocuments_Add,
   ApiHandOverDocuments_Edit,
   ApiHandOverDocuments_Submit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   CardModalSelect,
@@ -26,13 +26,13 @@ import {
   NotifierAlert,
   ModalSelectDate,
   ModalHandOverDocument,
-} from 'components';
+} from '@components';
 import {
   fetchListDocumentTypes,
   fetchListEntry,
   fetchListHandOverTypes,
-} from 'store/accHand_Over_Doc/thunk';
-import {fetchListDepartment} from 'store/accCus_Requirement/thunk';
+} from '@store/accHand_Over_Doc/thunk';
+import {fetchListDepartment} from '@store/accCus_Requirement/thunk';
 
 const FormHandOverDocument = ({route}) => {
   const item = route?.params?.item;

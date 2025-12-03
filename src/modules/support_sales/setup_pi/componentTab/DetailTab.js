@@ -6,10 +6,10 @@ import { useSelector } from "react-redux";
 import { View, Text, FlatList, ScrollView } from 'react-native';
 
 import { stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button } from "components";
-import { arrow_down_big, arrow_next_gray } from "svgImg";
-import { scale } from "utils/resolutions";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button } from "@components";
+import { arrow_down_big, arrow_next_gray } from "@svgImg";
+import { scale } from "@resolutions";
 
 const DetailTab = ({ detailPI }) => {
     const languageKey = useSelector(translateLang);

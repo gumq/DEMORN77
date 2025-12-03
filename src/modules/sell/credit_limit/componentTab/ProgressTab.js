@@ -12,11 +12,11 @@ import {
 import moment from 'moment';
 import {SvgXml} from 'react-native-svg';
 import {useSelector} from 'react-redux';
-import {translateLang} from 'store/accLanguages/slide';
-import {colors, fontSize} from 'themes';
-import {arrow_down_big, arrow_next_gray, noData} from 'svgImg';
+import {translateLang} from '@store/accLanguages/slide';
+import {colors, fontSize} from '@themes';
+import {arrow_down_big, arrow_next_gray, noData} from '@svgImg';
 import {stylesProgress, styles} from '../styles'; // stylesProgress should include the object you pasted
-import {scale} from 'utils/resolutions';
+import {scale} from '@utils/resolutions';;
 
 const ProgressTab = ({detailCreditLimit, dataBXD}) => {
   const languageKey = useSelector(translateLang);

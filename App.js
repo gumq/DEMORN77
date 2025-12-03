@@ -25,3 +25,23 @@ const App = () => {
 };
 
 export default App;
+// import {StyleSheet, Text, View} from 'react-native';
+// import React from 'react';
+// import {HeaderHomeNew} from '@components';
+// import {colors} from '@themes';
+//  import Config from 'react-native-config';
+// const App = () => {
+//    console.log('AAAAAA',Config.API_URL);
+  
+//   return (
+//     <View>
+//       <Text 
+//       style={{color:colors.red}}
+//       >indexaaaaaaaaaaaaaaaa{Config.API_URL}</Text>
+//     </View>
+//   );
+// };
+
+// export default App;
+
+// const styles = StyleSheet.create({});

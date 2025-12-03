@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { useSelector } from 'react-redux';
-import { translateLang } from 'store/accLanguages/slide';
+import { translateLang } from '@store/accLanguages/slide';
 
 import { stylesInventoryDetail } from '../styles';
 

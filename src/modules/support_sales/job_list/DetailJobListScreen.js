@@ -9,9 +9,9 @@ import { View, StatusBar, ScrollView, Text } from "react-native";
 
 import { stylesDetail } from './styles';
 import { HeaderBack, LoadingModal, RenderImage } from "@components";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { ModalApprovalStepOne, ModalApprovalStepTwo } from "./modalApprovalJob";
-import { fetchDetailJob } from "store/accJob_List/thunk";
+import { fetchDetailJob } from "@store/accJob_List/thunk";
 
 const DetailJobListScreen = ({ route, item }) => {
     const itemData = item || route?.params?.item;

@@ -15,9 +15,9 @@ import {
 } from 'react-native';
 
 import {stylesDetail, stylesFormCostProposal} from '../styles';
-import {arrow_down_big, downFile, viewFile_gray} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
-import {Button} from 'components';
+import {arrow_down_big, downFile, viewFile_gray} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
+import {Button} from '@components';
 
 const DetailTab = ({detailCostProposal, itemData}) => {
   const languageKey = useSelector(translateLang);

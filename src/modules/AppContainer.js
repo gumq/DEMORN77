@@ -8,7 +8,7 @@ import DeviceInfo from 'react-native-device-info';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ImagePicker from 'react-native-image-crop-picker';
 
-import { getListFetchLanguageDetails, getListFetchLanguageType, getListFetchLocale } from 'store/accLanguages/thunk';
+import { getListFetchLanguageDetails, getListFetchLanguageType, getListFetchLocale } from '../store/accLanguages/thunk';
 import { colors } from '@themes';
 import { MainStackNavigator } from './navigation/StackNavigator';
 import { Internet } from '@components';

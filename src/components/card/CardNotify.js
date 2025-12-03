@@ -5,7 +5,7 @@ import { scale } from "../../utils/resolutions";
 import { colors, fontSize } from "../../themes";
 import { Button } from '../buttons';
 import { SvgXml } from 'react-native-svg';
-import { close } from 'svgImg';
+import { close } from '@svgImg';
 import {
     cancel_contract_order,
     catalogue, cost_proposal,
@@ -32,7 +32,7 @@ import {
     customer_closed,
     handover_doc,
     job_list
-} from 'svgImg';
+} from '@svgImg';
 import moment from 'moment';
 
 const CardNotify = ({ style, icon, content, statuscolorTilte, statuscolorContent, statuscolorTime, title, time, isView, onPressDelete }) => {

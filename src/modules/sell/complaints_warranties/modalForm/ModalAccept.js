@@ -3,10 +3,10 @@ import { View, Text, TextInput } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
 import { stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, NotifierAlert, RadioButton } from "components";
-import { ApiComplaints_UpdateRequest } from "action/Api";
-import { fetchDetailComplaintWarranties } from "store/acc_Complaint_Warranties/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, NotifierAlert, RadioButton } from "@components";
+import { ApiComplaints_UpdateRequest } from "@api";
+import { fetchDetailComplaintWarranties } from "@store/acc_Complaint_Warranties/thunk";
 
 const ModalAccept = ({ setShowForm, isShow, OID }) => {
     const languageKey = useSelector(translateLang);

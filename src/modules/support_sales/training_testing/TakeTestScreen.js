@@ -7,19 +7,19 @@ import LinearGradient from 'react-native-linear-gradient';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {View, StatusBar, Text, ToastAndroid, Alert} from 'react-native';
 
-import {colors} from 'themes';
-import routes from 'modules/routes';
+import {colors} from '@themes';
+import routes from '@routes';
 import {styleTakeTest} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {ApiTrainings_SaveChoices} from 'action/Api';
-import {Button, HeaderBack, QuestionRenderer} from 'components';
+import {translateLang} from '@store/accLanguages/slide';
+import {ApiTrainings_SaveChoices} from '@api';
+import {Button, HeaderBack, QuestionRenderer} from '@components';
 import {
   close_blue,
   next_blue,
   next_gray,
   previous_blue,
   previous_gray,
-} from 'svgImg';
+} from '@svgImg';
 
 const TakeTestScreen = ({route}) => {
   const item = route?.params?.item;

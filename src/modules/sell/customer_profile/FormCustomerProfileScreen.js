@@ -33,8 +33,8 @@ import {
 import moment from 'moment';
 import routes from '@routes';
 import {styleFormCustomer, styles} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {arrow_down_big, arrow_next_gray} from 'svgImg';
+import {translateLang} from '@store/accLanguages/slide';
+import {arrow_down_big, arrow_next_gray} from '@svgImg';
 import {
   ApiCustomerEvaluation_Add,
   ApiCustomerEvaluation_Edit,
@@ -42,7 +42,7 @@ import {
   ApiCustomerProfiles_Edit,
   ApiCustomerProfiles_GetById,
   ApiCustomerProfiles_Submit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   CardModalSelect,
@@ -60,7 +60,7 @@ import {
   LoadingModal,
   ModalProfileCustomerFile,
   InputLocationnew,
-} from 'components';
+} from '@components';
 import {
   fetchApiCustomerProfiles_CheckInfoTaxCode,
   fetchApiCustomerProfiles_GetCategoryCustomer,
@@ -72,11 +72,11 @@ import {
   fetchListSalesTeam,
   fetchListSalesVBH,
   fetchListWardCommune,
-} from 'store/accCustomer_Profile/thunk';
-import {clearDetailUserID} from 'store/accCustomer_Profile/slide';
-import {scale} from 'utils/resolutions';
-import {colors} from 'themes';
-import ToggleCheckBox from 'components/ToggleCheckBox';
+} from '@store/accCustomer_Profile/thunk';
+import {clearDetailUserID} from '@store/accCustomer_Profile/slide';
+import {scale} from '@utils/resolutions';;
+import {colors} from '@themes';
+import ToggleCheckBox from '../../../components/ToggleCheckBox';
 import * as Yup from 'yup';
 const FormCustomerProfileScreen = ({route}) => {
   const item = route?.params?.item;

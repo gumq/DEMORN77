@@ -3,12 +3,12 @@ import { View, Text, TextInput } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
-import routes from "modules/routes";
-import { translateLang } from "store/accLanguages/slide";
+import routes from "@routes";
+import { translateLang } from "@store/accLanguages/slide";
 import { stylesDetail, stylesFormOrderRequest } from "../styles";
-import { fetchDetailCusRequirement } from "store/accCus_Requirement/thunk";
-import { ApiCustomerRequests_Edit, ApiCustomerRequests_Submit } from "action/Api";
-import { AttachManyFile, Button, CardModalSelect, ModalSelectDate, NotifierAlert } from "components";
+import { fetchDetailCusRequirement } from "@store/accCus_Requirement/thunk";
+import { ApiCustomerRequests_Edit, ApiCustomerRequests_Submit } from "@api";
+import { AttachManyFile, Button, CardModalSelect, ModalSelectDate, NotifierAlert } from "@components";
 
 const ModalApprovalEdit = ({ isShowInforApproval }) => {
     const languageKey = useSelector(translateLang);

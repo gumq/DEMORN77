@@ -6,7 +6,7 @@ import { View, StatusBar, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { styles } from './styles'
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { HeaderBack, LoadingModal, TabsHeaderDevices } from "@components";
 import { DetailTab, ProgressTab } from "./componentTab";
 

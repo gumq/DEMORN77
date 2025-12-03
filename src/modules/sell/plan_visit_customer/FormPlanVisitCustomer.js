@@ -8,12 +8,12 @@ import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {View, Text, ScrollView, StatusBar, Alert, Platform} from 'react-native';
 
 import routes from '@routes';
-import {close_blue} from 'svgImg';
+import {close_blue} from '@svgImg';
 import {stylesAddPlan} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {ApiPlanForUsers_CalendarCheck} from 'action/Api';
-import {fetchListEntry} from 'store/accCus_Requirement/thunk';
-import {fetchListSalesRoutes} from 'store/accVisit_Customer/thunk';
+import {translateLang} from '@store/accLanguages/slide';
+import {ApiPlanForUsers_CalendarCheck} from '@api';
+import {fetchListEntry} from '@store/accCus_Requirement/thunk';
+import {fetchListSalesRoutes} from '@store/accVisit_Customer/thunk';
 import {
   AttachManyFile,
   Button,
@@ -23,9 +23,9 @@ import {
   ModalNotify,
   ModalSelectDate,
   NotifierAlert,
-} from 'components';
-import {fetchListCustomerByUserID} from 'store/accAuth/thunk';
-import {scale} from 'utils/resolutions';
+} from '@components';
+import {fetchListCustomerByUserID} from '@store/accAuth/thunk';
+import {scale} from '@utils/resolutions';;
 
 const FormPlanVisitCustomer = ({route}) => {
   const item = route?.params?.item;

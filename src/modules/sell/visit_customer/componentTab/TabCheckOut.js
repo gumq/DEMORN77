@@ -5,10 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 import Geolocation from 'react-native-geolocation-service';
 
 import { stylesDetail } from "../styles";
-import { ApiVisitForUsers_CheckOut } from "action/Api";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, NotifierAlert } from "components";
-import { fetchDetailVisitCustomer } from "store/accVisit_Customer/thunk";
+import { ApiVisitForUsers_CheckOut } from "@api";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, NotifierAlert } from "@components";
+import { fetchDetailVisitCustomer } from "@store/accVisit_Customer/thunk";
 
 const TabCheckOut = ({ item }) => {
     const languageKey = useSelector(translateLang);

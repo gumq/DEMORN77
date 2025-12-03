@@ -7,10 +7,10 @@ import {View, StatusBar, ScrollView, TextInput, Text, Platform} from 'react-nati
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Modal from 'react-native-modal';
 
-import routes from 'modules/routes';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {DetailTab, ProgressTab} from './componentTab';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   Button,
   HeaderBack,
@@ -18,9 +18,9 @@ import {
   RadioButton,
   TabsHeaderDevices,
 } from '@components';
-import {ApiGeneralApprovals_ApprovalList} from 'action/Api';
-import {fetchApiExportPDF_ExportPDF, fetchApiv2_OtherApprovals_GetByID} from 'store/accApproval_Signature/thunk';
-import { scale } from 'utils/resolutions';
+import {ApiGeneralApprovals_ApprovalList} from '@api';
+import {fetchApiExportPDF_ExportPDF, fetchApiv2_OtherApprovals_GetByID} from '@store/accApproval_Signature/thunk';
+import { scale } from '@utils/resolutions';
 // import AttachFileCompleted from './componentTab/AttachFileCompleted';
 // import Attachfiles from './componentTab/Attachfiles';
 import moment from 'moment';

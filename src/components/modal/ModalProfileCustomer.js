@@ -16,17 +16,17 @@ import {
   Pressable,
 } from 'react-native';
 
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   InputDefault,
   AttachManyFile,
   RenderImage,
   CardModalSelect,
   Button,
-} from 'components';
-import {trash_22} from 'svgImg';
+} from '@components';
+import {trash_22} from '@svgImg';
 
 const {width} = Dimensions.get('window');
 

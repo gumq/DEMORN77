@@ -14,19 +14,19 @@ import {
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import Modal from 'react-native-modal';
 
-import {edit} from 'svgImg';
-import routes from 'modules/routes';
+import {edit} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail, stylesFormCredit} from './styles';
 import {DetailTab, ProgressTab} from './componentTab';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   ApiCustomerProfiles_GetById,
   ApiGeneralApprovals_ApprovalList,
-} from 'action/Api';
+} from '@api';
 import {
   fetchDetailCreditLimit,
   fetchInformationSAP,
-} from 'store/accCredit_Limit/thunk';
+} from '@store/accCredit_Limit/thunk';
 import {
   Button,
   HeaderBack,
@@ -36,9 +36,9 @@ import {
   RadioButton,
   TabsHeaderDevices,
 } from '@components';
-import {fetchApiApprovalProcess_GetById} from 'store/accApproval_Signature/thunk';
-import {scale} from 'utils/resolutions';
-import {fetchListItemType} from 'store/accCustomer_Profile/thunk';
+import {fetchApiApprovalProcess_GetById} from '@store/accApproval_Signature/thunk';
+import {scale} from '@utils/resolutions';;
+import {fetchListItemType} from '@store/accCustomer_Profile/thunk';
 
 const DetailCreditLimitScreen = ({route, item}) => {
   const itemData = item || route?.params?.item;

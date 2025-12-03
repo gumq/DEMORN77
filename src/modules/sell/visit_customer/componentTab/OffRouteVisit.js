@@ -3,12 +3,12 @@ import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { View, Text, StyleSheet, Dimensions, Alert, Platform } from "react-native";
 
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { InputDefault, CardModalSelect, Button, AttachManyFile, NotifierAlert } from "components";
-import { fetchListCancelReason, fetchListVisitCustomer } from "store/accVisit_Customer/thunk";
-import { ApiPlanForUsers_AddDetail, ApiVisitForUsers_OFFRoute } from "action/Api";
+import { translateLang } from "@store/accLanguages/slide";
+import { InputDefault, CardModalSelect, Button, AttachManyFile, NotifierAlert } from "@components";
+import { fetchListCancelReason, fetchListVisitCustomer } from "@store/accVisit_Customer/thunk";
+import { ApiPlanForUsers_AddDetail, ApiVisitForUsers_OFFRoute } from "@api";
 
 const { height } = Dimensions.get('window')
 

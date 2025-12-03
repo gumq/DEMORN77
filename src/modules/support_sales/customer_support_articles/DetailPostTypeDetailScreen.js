@@ -6,10 +6,10 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, Text, Image, ScrollView } from "react-native";
 
-import { colors } from "themes";
+import { colors } from "@themes";
 import { styles } from "./styles";
-import routes from "modules/routes";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
+import routes from "@routes";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
 
 const DetailPostTypeDetailScreen = ({ route }) => {
     const item = route?.params?.item;

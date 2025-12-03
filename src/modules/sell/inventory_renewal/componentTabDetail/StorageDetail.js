@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, FlatList, Dimensions, ScrollView } from 'react-native';
 import { useSelector } from 'react-redux';
-import { translateLang } from 'store/accLanguages/slide';
+import { translateLang } from '@store/accLanguages/slide';
 
 import { stylesStorageDetail } from '../styles';
-import { Button } from 'components';
-import { noData } from 'svgImg';
+import { Button } from '@components';
+import { noData } from '@svgImg';
 import { SvgXml } from 'react-native-svg';
 import moment from 'moment';
 

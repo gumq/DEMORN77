@@ -3,10 +3,10 @@ import moment from 'moment';
 import { useSelector } from 'react-redux';
 import { View, Text, StyleSheet, FlatList, ScrollView } from 'react-native';
 
-import { colors, fontSize } from 'themes';
+import { colors, fontSize } from '@themes';
 import { scale } from '@resolutions';
-import { translateLang } from 'store/accLanguages/slide';
-import { RenderImage } from 'components';
+import { translateLang } from '@store/accLanguages/slide';
+import { RenderImage } from '@components';
 
 const Detail = ({ detailApprovalListProcess }) => {
     const languageKey = useSelector(translateLang);

@@ -6,9 +6,9 @@ import { TextInput } from "react-native-gesture-handler";
 import { View, Text } from 'react-native';
 
 import { stylesDetail, stylesFormCredit } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { fetchDetailConfirmRequest } from "store/accDeposit_Payment/thunk";
-import { AttachManyFile, Button, ModalSelectDate, NotifierAlert, RenderImage } from "components";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchDetailConfirmRequest } from "@store/accDeposit_Payment/thunk";
+import { AttachManyFile, Button, ModalSelectDate, NotifierAlert, RenderImage } from "@components";
 import { ApiPaymentConfirmations_Add, ApiPaymentConfirmations_Edit, ApiPaymentConfirmations_Submit } from "action/Api"
 
 const DetailTab = ({ detailPaymentRequest, itemData }) => {

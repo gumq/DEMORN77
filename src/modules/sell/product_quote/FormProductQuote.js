@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 
 import routes from '@routes';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {stylesProductQuote} from './styles';
 import {
   arrow_down_big,
@@ -27,12 +27,12 @@ import {
   close_blue,
   radio,
   radio_active,
-} from 'svgImg';
+} from '@svgImg';
 import {
   ApiQuotation_Add,
   ApiQuotation_Edit,
   ApiQuotation_Submit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   CardModalSelect,
@@ -42,14 +42,14 @@ import {
   NotifierAlert,
   ModalSelectDate,
   ModalProductQuote,
-} from 'components';
+} from '@components';
 import {
   fetchListEntryQuote,
   fetchListItemsProduct,
-} from 'store/accProduct_Quote/thunk';
+} from '@store/accProduct_Quote/thunk';
 import moment from 'moment';
-import {updateListItemsProduct} from 'store/accProduct_Quote/slide';
-import {scale} from 'utils/resolutions';
+import {updateListItemsProduct} from '@store/accProduct_Quote/slide';
+import {scale} from '@utils/resolutions';;
 
 const FormProductQuote = ({route}) => {
   const item = route?.params?.item;

@@ -7,11 +7,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { stylesDetail } from './styles'
 import { DetailTab, ProgressTab } from "./componentTab";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { HeaderBack, LoadingModal, TabsHeaderDevices } from "@components";
-import { edit } from "svgImg";
-import routes from "modules/routes";
-import { fetchDetailConfirmRequest, fetchDetailPaymentRequest } from "store/accDeposit_Payment/thunk";
+import { edit } from "@svgImg";
+import routes from "@routes";
+import { fetchDetailConfirmRequest, fetchDetailPaymentRequest } from "@store/accDeposit_Payment/thunk";
 
 const DetailPaymentRequestScreen = ({ route, item }) => {
     const itemData = item || route?.params?.item;

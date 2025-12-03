@@ -4,13 +4,13 @@ import _ from 'lodash';
 import { useDispatch, useSelector } from "react-redux";
 import { View, Text, StyleSheet, Dimensions, Platform } from "react-native";
 
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { InputDefault, CardModalSelect, Button, NotifierAlert, } from "components";
-import { fetchListCancelReason } from "store/accVisit_Customer/thunk";
-import { fetchDetailGiftPrograms } from "store/accGift_Program/thunk";
-import { ApiPromotionGifts_Edit } from "action/Api";
+import { translateLang } from "@store/accLanguages/slide";
+import { InputDefault, CardModalSelect, Button, NotifierAlert, } from "@components";
+import { fetchListCancelReason } from "@store/accVisit_Customer/thunk";
+import { fetchDetailGiftPrograms } from "@store/accGift_Program/thunk";
+import { ApiPromotionGifts_Edit } from "@api";
 
 const { height } = Dimensions.get('window')
 

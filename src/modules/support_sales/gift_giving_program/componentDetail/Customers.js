@@ -6,11 +6,11 @@ import _ from 'lodash';
 import { View, Text, FlatList} from 'react-native';
 
 import { stylesCustomers, stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, NotifierAlert } from "components";
-import { ApiPromotionGifts_Edit } from "action/Api";
-import { noData, trash_22 } from "svgImg";
-import { fetchDetailGiftPrograms } from "store/accGift_Program/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, NotifierAlert } from "@components";
+import { ApiPromotionGifts_Edit } from "@api";
+import { noData, trash_22 } from "@svgImg";
+import { fetchDetailGiftPrograms } from "@store/accGift_Program/thunk";
 
 const Customers = () => {
     const languageKey = useSelector(translateLang)

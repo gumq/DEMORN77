@@ -6,12 +6,12 @@ import LinearGradient from "react-native-linear-gradient";
 import { View, StatusBar, ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { edit } from "svgImg";
-import routes from "modules/routes";
+import { edit } from "@svgImg";
+import routes from "@routes";
 import { stylesDetail } from './styles'
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { HeaderBack, LoadingModal, RenderImage } from "@components";
-import { fetchDetailOtherProposal } from "store/accOther_Proposal/thunk";
+import { fetchDetailOtherProposal } from "@store/accOther_Proposal/thunk";
 
 const DetailOtherProposalScreen = ({ route, item }) => {
     const itemData = item || route?.params?.item;

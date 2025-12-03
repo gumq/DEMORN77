@@ -18,10 +18,10 @@
 // } from 'react-native';
 
 // import {Button} from '../buttons';
-// import {colors, fontSize} from 'themes';
+// import {colors, fontSize} from '@themes';
 // import {hScale, scale} from '@resolutions';
-// import {translateLang} from 'store/accLanguages/slide';
-// import {CardModalProvince, CardModalSelect, InputDefault} from 'components';
+// import {translateLang} from '@store/accLanguages/slide';
+// import {CardModalProvince, CardModalSelect, InputDefault} from '@components';
 // import {
 //   bank,
 //   close_red,
@@ -30,7 +30,7 @@
 //   three_dot,
 //   trash_22,
 //   user_red,
-// } from 'svgImg';
+// } from '@svgImg';
 
 // const {height} = Dimensions.get('window');
 
@@ -577,10 +577,10 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
-import {CardModalProvince, CardModalSelect, InputDefault} from 'components';
+import {translateLang} from '@store/accLanguages/slide';
+import {CardModalProvince, CardModalSelect, InputDefault} from '@components';
 import {
   bank,
   close_red,
@@ -589,7 +589,7 @@ import {
   three_dot,
   trash_22,
   user_red,
-} from 'svgImg';
+} from '@svgImg';
 
 const {height} = Dimensions.get('window');
 

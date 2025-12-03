@@ -4,13 +4,13 @@ import Modal from 'react-native-modal';
 import { useDispatch, useSelector } from "react-redux";
 import { SvgXml } from "react-native-svg";
 import { View, Text, StyleSheet, ScrollView, Dimensions, FlatList } from "react-native";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { CardModalSelect, Button, ModalSelectDate, InputDefault, AttachManyFile } from "components";
-import { close_red, close_white, trash_22 } from "svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { CardModalSelect, Button, ModalSelectDate, InputDefault, AttachManyFile } from "@components";
+import { close_red, close_white, trash_22 } from "@svgImg";
 import ModalErrorProduct from "./ModalErrorProduct";
-import { fetchListDepartment } from "store/accCus_Requirement/thunk";
+import { fetchListDepartment } from "@store/accCus_Requirement/thunk";
 
 const { height } = Dimensions.get('window');
 

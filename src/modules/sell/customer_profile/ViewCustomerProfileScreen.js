@@ -31,14 +31,14 @@ import {
 
 import routes from '@routes';
 import {styleFormCustomer, styles} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {arrow_down_big, arrow_next_gray, edit} from 'svgImg';
+import {translateLang} from '@store/accLanguages/slide';
+import {arrow_down_big, arrow_next_gray, edit} from '@svgImg';
 import {
   ApiCustomerProfiles_Add,
   ApiCustomerProfiles_Edit,
   ApiCustomerProfiles_GetById,
   ApiCustomerProfiles_Submit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   HeaderBack,
@@ -51,7 +51,7 @@ import {
   LoadingModal,
   TextCopy,
   ModalProfileCustomerFile,
-} from 'components';
+} from '@components';
 import {
   fetchDetailUserID,
   fetchListNation,
@@ -59,12 +59,12 @@ import {
   fetchListSalesSubTeam,
   fetchListSalesVBH,
   fetchListWardCommune,
-} from 'store/accCustomer_Profile/thunk';
-import {clearDetailUserID} from 'store/accCustomer_Profile/slide';
+} from '@store/accCustomer_Profile/thunk';
+import {clearDetailUserID} from '@store/accCustomer_Profile/slide';
 import moment from 'moment';
-import {scale} from 'utils/resolutions';
-import {colors, fontSize} from 'themes';
-import ToggleCheckBox from 'components/ToggleCheckBox';
+import {scale} from '@utils/resolutions';;
+import {colors, fontSize} from '@themes';
+import ToggleCheckBox from '../../../components/ToggleCheckBox';
 
 const ViewCustomerProfileScreen = ({route}) => {
   const item = route?.params?.item;

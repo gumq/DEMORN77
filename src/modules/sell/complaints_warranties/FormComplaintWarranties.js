@@ -9,13 +9,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, StatusBar } from "react-native";
 
 import routes from "@routes";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { stylesComplaintForm } from "./styles";
-import { close_blue, } from "svgImg";
-import { ApiComplaints_Add, ApiComplaints_Edit, ApiComplaints_Submit } from "action/Api";
-import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, NotifierAlert, AttachManyFile } from "components";
-import { updateListItemsProduct } from "store/accProduct_Quote/slide";
-import { fetchListEntryComplaint } from "store/acc_Complaint_Warranties/thunk";
+import { close_blue, } from "@svgImg";
+import { ApiComplaints_Add, ApiComplaints_Edit, ApiComplaints_Submit } from "@api";
+import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, NotifierAlert, AttachManyFile } from "@components";
+import { updateListItemsProduct } from "@store/accProduct_Quote/slide";
+import { fetchListEntryComplaint } from "@store/acc_Complaint_Warranties/thunk";
 
 const FormComplaintWarranties = ({ route }) => {
     const item = route?.params?.item;

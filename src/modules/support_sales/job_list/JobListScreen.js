@@ -8,11 +8,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, ScrollView, LogBox, RefreshControl, FlatList, Dimensions, Text } from "react-native";
 
 import { styles } from './styles'
-import routes from "modules/routes";
-import { noData, plus_white } from "svgImg";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListJob } from "store/accJob_List/thunk";
+import routes from "@routes";
+import { noData, plus_white } from "@svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListJob } from "@store/accJob_List/thunk";
 
 const { height } = Dimensions.get('window')
 const JobListScreen = () => {

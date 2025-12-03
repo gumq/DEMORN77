@@ -8,10 +8,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, Image, Text, ScrollView, Dimensions } from "react-native";
 
 import { styles } from './styles'
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { HeaderBack, LoadingModal } from "@components";
-import { fetchDetailPromotionPrograms } from "store/accPromotion_Program/thunk";
-import { colors, fontSize } from "themes";
+import { fetchDetailPromotionPrograms } from "@store/accPromotion_Program/thunk";
+import { colors, fontSize } from "@themes";
 
 const { width } = Dimensions.get('window')
 

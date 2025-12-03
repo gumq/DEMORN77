@@ -19,7 +19,7 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
 import {
   close_red,
@@ -28,15 +28,15 @@ import {
   phone,
   trash_22,
   user_red,
-} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   InputDefault,
   CardModalSelect,
   Switch,
   InputLocationnew,
   CardModalProvince,
-} from 'components';
+} from '@components';
 import Geolocation from 'react-native-geolocation-service';
 import {
   check,
@@ -48,7 +48,7 @@ import {
 import {
   fetchListProvinceCity,
   fetchListWardCommune,
-} from 'store/accCustomer_Profile/thunk';
+} from '@store/accCustomer_Profile/thunk';
 import * as Yup from 'yup';
 const {height} = Dimensions.get('window');
 

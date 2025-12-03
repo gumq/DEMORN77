@@ -9,12 +9,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, StatusBar, Alert } from "react-native";
 
 import routes from "@routes";
-import { close_blue, } from "svgImg";
+import { close_blue, } from "@svgImg";
 import { stylesFormCredit } from "./styles";
-import { translateLang } from "store/accLanguages/slide";
-import { fetchListEntryPayment, fetchListOrder } from "store/accDeposit_Payment/thunk";
-import { ApiPaymentRequests_Add, ApiPaymentRequests_Edit, ApiPaymentRequests_Submit } from "action/Api";
-import { Button, CardModalSelect, HeaderBack, InputDefault, ModalSelectDate, NotifierAlert, AttachManyFile } from "components";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchListEntryPayment, fetchListOrder } from "@store/accDeposit_Payment/thunk";
+import { ApiPaymentRequests_Add, ApiPaymentRequests_Edit, ApiPaymentRequests_Submit } from "@api";
+import { Button, CardModalSelect, HeaderBack, InputDefault, ModalSelectDate, NotifierAlert, AttachManyFile } from "@components";
 
 const FormPaymentRequestScreen = ({ route }) => {
     const item = route?.params?.item;

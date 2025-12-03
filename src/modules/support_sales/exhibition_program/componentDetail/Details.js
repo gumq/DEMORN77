@@ -6,12 +6,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { View, Text, Image, TextInput, ScrollView } from 'react-native';
 
 import { stylesCustomers, stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, CardModalSelect, NotifierAlert, QuestionRenderer } from "components";
-import { fetchDetailExhibitionPrograms } from "store/accExhibition_Programs/thunk";
-import { ApiExhibitionRegistrations_Add, ApiExhibitionRegistrations_Submit } from "action/Api";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, CardModalSelect, NotifierAlert, QuestionRenderer } from "@components";
+import { fetchDetailExhibitionPrograms } from "@store/accExhibition_Programs/thunk";
+import { ApiExhibitionRegistrations_Add, ApiExhibitionRegistrations_Submit } from "@api";
 import { SvgXml } from "react-native-svg";
-import { arrow_down_big, arrow_next_gray } from "svgImg";
+import { arrow_down_big, arrow_next_gray } from "@svgImg";
 
 const Details = ({ detailExhibitionPrograms }) => {
     const languageKey = useSelector(translateLang);

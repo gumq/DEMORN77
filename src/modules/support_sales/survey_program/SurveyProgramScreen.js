@@ -16,18 +16,18 @@ import {
   Text,
 } from 'react-native';
 
-import {noData} from 'svgImg';
+import {noData} from '@svgImg';
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {translateLang} from 'store/accLanguages/slide';
-import {fetchListSurveyPrograms} from 'store/accSurvey_Program/thunk';
+import routes from '@routes';
+import {translateLang} from '@store/accLanguages/slide';
+import {fetchListSurveyPrograms} from '@store/accSurvey_Program/thunk';
 import {
   Button,
   HeaderBack,
   LoadingModal,
   SearchBar,
   SearchModal,
-} from 'components';
+} from '@components';
 
 const {height} = Dimensions.get('window');
 

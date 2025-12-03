@@ -7,12 +7,12 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, ScrollView, RefreshControl, FlatList, Dimensions, Text, Image, LogBox } from "react-native";
 
-import { noData } from "svgImg";
+import { noData } from "@svgImg";
 import { styles } from './styles'
-import routes from "modules/routes";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListPromotionPrograms } from "store/accPromotion_Program/thunk";
+import routes from "@routes";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListPromotionPrograms } from "@store/accPromotion_Program/thunk";
 
 const { height } = Dimensions.get('window')
 const PromotionalProgramScreen = () => {

@@ -7,8 +7,8 @@ import { View, StatusBar, ScrollView } from "react-native";
 
 import { styles } from './styles'
 import { Customers, Details, EvaluationResult } from "./componentDetail";
-import { translateLang } from "store/accLanguages/slide";
-import { fetchDetailExhibitionPrograms } from "store/accExhibition_Programs/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchDetailExhibitionPrograms } from "@store/accExhibition_Programs/thunk";
 import {  HeaderBack, LoadingModal, TabsHeaderDevices } from "@components";
 
 const DetailExhibitionProgram = ({ route }) => {

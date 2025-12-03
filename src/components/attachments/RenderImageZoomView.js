@@ -10,7 +10,7 @@ import {
 import {SvgXml} from 'react-native-svg';
 import Modal from 'react-native-modal';
 import ImageViewer from 'react-native-image-zoom-viewer';
-import {hScale, scale} from 'utils/resolutions';
+import {hScale, scale} from '@utils/resolutions';
 
 const {width} = Dimensions.get('window');
 

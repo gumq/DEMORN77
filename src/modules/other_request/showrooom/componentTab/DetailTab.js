@@ -6,10 +6,10 @@ import { View, Text, FlatList, ScrollView, TextInput } from 'react-native';
 import Modal from 'react-native-modal';
 
 import { stylesDetail, styles } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, RenderImage, AttachManyFile, NotifierAlert } from "components";
-import { ApiDisplayMaterials_Edit } from "action/Api";
-import { fetchDetailCatalogue } from "store/accOther_Proposal/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, RenderImage, AttachManyFile, NotifierAlert } from "@components";
+import { ApiDisplayMaterials_Edit } from "@api";
+import { fetchDetailCatalogue } from "@store/accOther_Proposal/thunk";
 
 const DetailTab = ({ detailShowroom }) => {
     const languageKey = useSelector(translateLang);

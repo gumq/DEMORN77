@@ -10,12 +10,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, StatusBar, FlatList } from "react-native";
 
 import routes from "@routes";
-import { fetchListOrders } from "store/accOrders/thunk";
-import { translateLang } from "store/accLanguages/slide";
+import { fetchListOrders } from "@store/accOrders/thunk";
+import { translateLang } from "@store/accLanguages/slide";
 import { stylesFormCostProposal } from "./styles";
-import { arrow_down_big, close_blue, } from "svgImg";
-import { ApiBrandPromotionBudgets_Add, ApiBrandPromotionBudgets_Edit, ApiBrandPromotionBudgets_Submit } from "action/Api";
-import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, NotifierAlert, ModalCostProposal, ModalSelectDate, AttachManyFile } from "components";
+import { arrow_down_big, close_blue, } from "@svgImg";
+import { ApiBrandPromotionBudgets_Add, ApiBrandPromotionBudgets_Edit, ApiBrandPromotionBudgets_Submit } from "@api";
+import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, NotifierAlert, ModalCostProposal, ModalSelectDate, AttachManyFile } from "@components";
 
 const FormCostProposal = ({ route }) => {
     const item = route?.params?.item;

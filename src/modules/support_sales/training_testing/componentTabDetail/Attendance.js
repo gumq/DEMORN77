@@ -4,12 +4,12 @@ import { View, Text, Platform, PermissionsAndroid, FlatList } from 'react-native
 import Modal from 'react-native-modal';
 import Geolocation from 'react-native-geolocation-service';
 
-import { AttachManyFile, Button, NotifierAlert, RenderImage } from "components";
+import { AttachManyFile, Button, NotifierAlert, RenderImage } from "@components";
 import { stylesAttendance } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import moment from "moment";
-import { ApiTrainings_CheckIn, ApiTrainings_CheckOut } from "action/Api";
-import { fetchDetailTraining } from "store/accTraining_Testing/thunk";
+import { ApiTrainings_CheckIn, ApiTrainings_CheckOut } from "@api";
+import { fetchDetailTraining } from "@store/accTraining_Testing/thunk";
 
 const Attendance = () => {
     const languageKey = useSelector(translateLang);

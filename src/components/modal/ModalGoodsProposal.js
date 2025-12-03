@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { View, Text, StyleSheet, Platform, ScrollView, Dimensions } from "react-native";
 
 import { Button } from "../buttons";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { InputDefault, CardModalSelect } from "components";
-import { ApiOrders_EditPrices } from "action/Api";
-import { fetchListItem } from "store/accOther_Proposal/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { InputDefault, CardModalSelect } from "@components";
+import { ApiOrders_EditPrices } from "@api";
+import { fetchListItem } from "@store/accOther_Proposal/thunk";
 
 const { height } = Dimensions.get('window');
 const ModalGoodsProposal = ({

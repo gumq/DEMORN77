@@ -4,11 +4,11 @@ import { View, Text, TextInput } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
 import { stylesDetail } from "../styles";
-import { ApiVisitForUsers_Business } from "action/Api";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, NotifierAlert } from "components";
-import { fetchDetailVisitCustomer } from "store/accVisit_Customer/thunk";
-import { colors } from "themes";
+import { ApiVisitForUsers_Business } from "@api";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, NotifierAlert } from "@components";
+import { fetchDetailVisitCustomer } from "@store/accVisit_Customer/thunk";
+import { colors } from "@themes";
 
 const TabInforBussiness = ({ item }) => {
     const languageKey = useSelector(translateLang);

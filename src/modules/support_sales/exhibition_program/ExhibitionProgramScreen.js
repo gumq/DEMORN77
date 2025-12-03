@@ -7,13 +7,13 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, ScrollView, LogBox, RefreshControl, FlatList, Dimensions, Text, Image } from "react-native";
 
-import { noData } from "svgImg";
+import { noData } from "@svgImg";
 import { styles } from './styles'
-import routes from "modules/routes";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListExhibitionPrograms } from "store/accExhibition_Programs/thunk";
-import { fetchListCustomerByUserID } from "store/accAuth/thunk";
+import routes from "@routes";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListExhibitionPrograms } from "@store/accExhibition_Programs/thunk";
+import { fetchListCustomerByUserID } from "@store/accAuth/thunk";
 
 const { height } = Dimensions.get('window')
 const ExhibitionProgramScreen = () => {

@@ -26,7 +26,7 @@ import {hScale, scale} from '@resolutions';
 import {colors, fontSize} from '@themes';
 import {btnClose, camera, close} from '@svgImg';
 import {ApiUploadFile} from '@api';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '../../store/accLanguages/slide';
 import RenderImage from './RenderImage';
 
 const {width} = Dimensions.get('window');

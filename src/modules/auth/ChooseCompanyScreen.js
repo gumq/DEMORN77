@@ -14,10 +14,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import routes from '@routes';
 import styles from './styles';
 import { ApiLogin } from '@api';
-import { updateUser } from 'store/accAuth/slide'
-import { translateLang } from 'store/accLanguages/slide';
-import { setRefreshToken, setToken, setUserInformation } from 'storage';
-import { Button, NotifierAlert, LoadingModal, CardModalCompany } from 'components';
+import { updateUser } from '@store/accAuth/slide';
+import { translateLang } from '@store/accLanguages/slide';
+import { setRefreshToken, setToken, setUserInformation } from '@storage';import { Button, NotifierAlert, LoadingModal, CardModalCompany } from '@components';
 
 const ChooseCompanyScreen = ({ route }) => {
   const body = route?.params?.body;

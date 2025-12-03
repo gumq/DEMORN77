@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {View, Text, FlatList, StyleSheet} from 'react-native';
-import {colors, fontSize} from 'themes';
-import {scale} from 'utils/resolutions';
+import {colors, fontSize} from '@themes';
+import {scale} from '@utils/resolutions';;
 import ProgressBar from './ProgressBar';
 
 const formatNumber = n => {

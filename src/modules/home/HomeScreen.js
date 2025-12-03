@@ -20,7 +20,7 @@ import {
   Alert,
 } from 'react-native';
 
-import {fetchMenu} from 'store/accHome/thunk';
+import {fetchMenu} from '@store/accHome/thunk';
 import {fetchAddGPS} from '/store/accGPS/thunk';
 import {
   Button,
@@ -32,7 +32,7 @@ import {
   SearchModal,
   TabsHeader,
 } from '@components';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import LinearGradient from 'react-native-linear-gradient';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from './styles';
@@ -70,18 +70,17 @@ import {
   complaint,
   TKXD,
   updateGps,
-} from 'svgImg';
+} from '@svgImg';
 import {useFocusEffect, useNavigation} from '@react-navigation/native';
-import {colors} from 'themes';
-import {updateDetailMenu} from 'store/accHome/slide';
-import {fcmService} from 'FCM/FCMService';
-import {localNotificationService} from 'FCM/PushNotification';
-import {ApiAddTokenFirebase} from 'action/Api';
-import {setFcmInfo} from 'storage';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import {convertVi} from 'utils';
-import {updateListEntryCreditLimit} from 'store/accCredit_Limit/slide';
-import {clrsListCustomers} from 'store/accApproval_Signature/slide';
+import {colors} from '@themes';
+import {updateDetailMenu} from '@store/accHome/slide';
+import {fcmService} from '../../FCM/FCMService';
+import {localNotificationService} from '../../FCM/PushNotification';
+import {ApiAddTokenFirebase} from '@api';
+import {setFcmInfo} from '@storage';import AsyncStorage from '@react-native-async-storage/async-storage';
+import {convertVi} from '@utils/resolutions';;
+import {updateListEntryCreditLimit} from '@store/accCredit_Limit/slide';
+import {clrsListCustomers} from '@store/accApproval_Signature/slide';
 const width = Dimensions.get('window').width;
 const HomeScreen = () => {
   const dispatch = useDispatch();

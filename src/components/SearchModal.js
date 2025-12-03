@@ -1,4 +1,4 @@
-import {convertVi} from '@utils';
+import {convertVi} from '@utils/resolutions';;
 
 const SearchModal = (data, value) => {
   if (!Array.isArray(data) || !value) return [];
@@ -22,7 +22,7 @@ const SearchModal = (data, value) => {
 };
 
 export default SearchModal;
-// import { convertVi } from '@utils';
+// import { convertVi } from '@utils/resolutions';;
 
 // /**
 //  * SearchModal: tìm trong `data` (array) theo `value` (string)

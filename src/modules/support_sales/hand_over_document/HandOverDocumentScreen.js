@@ -8,13 +8,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, ScrollView, LogBox, RefreshControl, FlatList, Dimensions, Text } from "react-native";
 
 import { styles } from './styles'
-import routes from "modules/routes";
-import { noData, plus_white } from "svgImg";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListHandOverDoc } from "store/accHand_Over_Doc/thunk";
-import { fetchListCustomerByUserID } from "store/accAuth/thunk";
-import { fetchListUser } from "store/accApproval_Signature/thunk";
+import routes from "@routes";
+import { noData, plus_white } from "@svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListHandOverDoc } from "@store/accHand_Over_Doc/thunk";
+import { fetchListCustomerByUserID } from "@store/accAuth/thunk";
+import { fetchListUser } from "@store/accApproval_Signature/thunk";
 
 const { height } = Dimensions.get('window')
 const HandOverDocumentScreen = () => {

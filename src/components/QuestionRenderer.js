@@ -2,10 +2,10 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { useSelector } from 'react-redux';
-import { translateLang } from 'store/accLanguages/slide';
-import { checkbox_20, checkbox_active_20, radio, radio_active } from 'svgImg';
-import { colors, fontSize } from 'themes';
-import { hScale, scale } from 'utils/resolutions';
+import { translateLang } from '@store/accLanguages/slide';
+import { checkbox_20, checkbox_active_20, radio, radio_active } from '@svgImg';
+import { colors, fontSize } from '@themes';
+import { hScale, scale } from '@utils/resolutions';
 import { uniqBy } from 'lodash'
 
 const QuestionRenderer = ({ questions, onChangeAnswers, dataEdit, mode = 'all', currentIndex = 0 }) => {

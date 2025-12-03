@@ -7,19 +7,19 @@ import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {View, StatusBar, ScrollView, LogBox, Platform} from 'react-native';
 
 import {styles} from './styles';
-import {plus_white} from 'svgImg';
-import routes from 'modules/routes';
-import {translateLang} from 'store/accLanguages/slide';
-import {Button, HeaderBack, LoadingModal, TabsHeaderDevices} from 'components';
+import {plus_white} from '@svgImg';
+import routes from '@routes';
+import {translateLang} from '@store/accLanguages/slide';
+import {Button, HeaderBack, LoadingModal, TabsHeaderDevices} from '@components';
 import {
   AllApprovalProcess,
   Approved,
   RefuseApproval,
   WaitingApprovalProcess,
 } from './componentTab';
-import {fetchListPlanVisitCustomer} from 'store/accVisit_Customer/thunk';
-import {fetchListUserByUserID} from 'store/accAuth/thunk';
-import {scale} from 'utils/resolutions';
+import {fetchListPlanVisitCustomer} from '@store/accVisit_Customer/thunk';
+import {fetchListUserByUserID} from '@store/accAuth/thunk';
+import {scale} from '@utils/resolutions';;
 
 const PlanVisitCustomerScreen = () => {
   const dispatch = useDispatch();

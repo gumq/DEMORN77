@@ -4,12 +4,12 @@ import Modal from 'react-native-modal';
 import { useDispatch, useSelector } from "react-redux";
 import { SvgXml } from "react-native-svg";
 import { View, Text, StyleSheet, ScrollView, Dimensions } from "react-native";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { CardModalSelect, Button, InputDefault } from "components";
-import { close_red, close_white } from "svgImg";
-import { fetchListProductError } from "store/acc_Complaint_Warranties/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { CardModalSelect, Button, InputDefault } from "@components";
+import { close_red, close_white } from "@svgImg";
+import { fetchListProductError } from "@store/acc_Complaint_Warranties/thunk";
 
 const { height } = Dimensions.get('window');
 

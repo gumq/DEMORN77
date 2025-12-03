@@ -6,16 +6,16 @@ import LinearGradient from 'react-native-linear-gradient';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {View, StatusBar, Text, FlatList} from 'react-native';
 
-import {colors} from 'themes';
-import {close_blue} from 'svgImg';
-import routes from 'modules/routes';
+import {colors} from '@themes';
+import {close_blue} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {HeaderBack, LoadingModal} from '@components';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   fetchDetailTraining,
   fetchListTrainingQuestions,
-} from 'store/accTraining_Testing/thunk';
+} from '@store/accTraining_Testing/thunk';
 
 const DetailTestingScreen = ({route}) => {
   const item = route?.params?.item;

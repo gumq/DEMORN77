@@ -10,12 +10,12 @@ import { View, Text, ScrollView, StatusBar, Alert, FlatList } from "react-native
 
 import routes from "@routes";
 import { stylesDetail, stylesFormProposal } from "./styles";
-import { translateLang } from "store/accLanguages/slide";
-import { arrow_down_big, arrow_next_gray, close_blue, trash_22 } from "svgImg";
-import { ApiDisplayCabinets_Add, ApiDisplayCabinets_Edit, ApiDisplayCabinets_Submit, ApiDisplayMaterials_Add, ApiDisplayMaterials_Edit, ApiDisplayMaterials_Submit } from "action/Api";
-import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, ModalSelectDate, NotifierAlert, RadioButton, AttachManyFile, ModalGoodsProposal, ModalGoodsProposalShowroom } from "components";
-import { fetchListCustomerByUserID } from "store/accAuth/thunk";
-import { fetchListProgramShowroom } from "store/accOther_Proposal/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { arrow_down_big, arrow_next_gray, close_blue, trash_22 } from "@svgImg";
+import { ApiDisplayCabinets_Add, ApiDisplayCabinets_Edit, ApiDisplayCabinets_Submit, ApiDisplayMaterials_Add, ApiDisplayMaterials_Edit, ApiDisplayMaterials_Submit } from "@api";
+import { Button, CardModalSelect, HeaderBack, InputDefault, ModalNotify, ModalSelectDate, NotifierAlert, RadioButton, AttachManyFile, ModalGoodsProposal, ModalGoodsProposalShowroom } from "@components";
+import { fetchListCustomerByUserID } from "@store/accAuth/thunk";
+import { fetchListProgramShowroom } from "@store/accOther_Proposal/thunk";
 
 const FormShowroomScreen = ({ route }) => {
     const item = route?.params?.item;

@@ -21,9 +21,9 @@ import {
 } from 'react-native';
 
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {noData, plus_white, trash_22} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+import routes from '@routes';
+import {noData, plus_white, trash_22} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   AttachManyFile,
   Button,
@@ -33,20 +33,20 @@ import {
   NotifierAlert,
   SearchBar,
   SearchModal,
-} from 'components';
+} from '@components';
 import {
   fetchListCategoryTypeOrder,
   fetchListOrders,
-} from 'store/accOrders/thunk';
+} from '@store/accOrders/thunk';
 import {
   fetchApiCompanyConfig_GetByUserID,
   fetchListCustomerByUserID,
-} from 'store/accAuth/thunk';
-import {ApiSaleOrder_Cancel, ApiSaleOrders_GetByID} from 'action/Api';
-import {fetchListCancelReason} from 'store/accVisit_Customer/thunk';
-import {fetchListCustomers} from 'store/accApproval_Signature/thunk';
-import {scale} from 'utils/resolutions';
-import {colors} from 'themes';
+} from '@store/accAuth/thunk';
+import {ApiSaleOrder_Cancel, ApiSaleOrders_GetByID} from '@api';
+import {fetchListCancelReason} from '@store/accVisit_Customer/thunk';
+import {fetchListCustomers} from '@store/accApproval_Signature/thunk';
+import {scale} from '@utils/resolutions';;
+import {colors} from '@themes';
 
 const {height} = Dimensions.get('window');
 const OrdersScreen = () => {

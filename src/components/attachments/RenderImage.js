@@ -1,7 +1,7 @@
 // import React, {useEffect, useState} from 'react';
 // import {Dimensions, Image, View, StyleSheet} from 'react-native';
 // import {SvgXml} from 'react-native-svg';
-// import {hScale, scale} from 'utils/resolutions';
+// import {hScale, scale} from '@utils/resolutions';;
 
 // const {width} = Dimensions.get('window');
 
@@ -104,7 +104,7 @@ import {
   Alert,
 } from 'react-native';
 import {SvgXml} from 'react-native-svg';
-import {hScale, scale} from 'utils/resolutions';
+import {hScale, scale} from '@utils/resolutions';
 import {WebView} from 'react-native-webview';
 
 const {width} = Dimensions.get('window');

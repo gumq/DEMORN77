@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {SvgXml} from 'react-native-svg';
-import {arrow_down} from 'svgImg';
-import {colors, fontSize} from 'themes';
+import {arrow_down} from '@svgImg';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
 
 const CardModalSelectTrigger = ({

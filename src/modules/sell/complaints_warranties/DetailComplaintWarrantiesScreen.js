@@ -6,12 +6,12 @@ import { View, StatusBar, ScrollView, TextInput, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Modal from 'react-native-modal';
 
-import routes from "modules/routes";
+import routes from "@routes";
 import { stylesDetail } from './styles';
 import { DetailTab, ProgressTab } from "./componentTab";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { Button, HeaderBack, LoadingModal, NotifierAlert, RadioButton, TabsHeaderDevices } from "@components";
-import { ApiGeneralApprovals_ApprovalList } from "action/Api";
+import { ApiGeneralApprovals_ApprovalList } from "@api";
 
 const DetailComplaintWarrantiesScreen = ({ route, item }) => {
     const itemData = item || route?.params?.item;

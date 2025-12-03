@@ -8,11 +8,11 @@ import { View, StatusBar, ScrollView, LogBox, RefreshControl, FlatList, Dimensio
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { styles } from './styles'
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
-import { fetchListGoodTypes, fetchListInventories } from "store/accInventory/thunk";
-import { arrow_down_big, checkbox, checkbox_active, noData } from "svgImg";
-import routes from "modules/routes";
+import { fetchListGoodTypes, fetchListInventories } from "@store/accInventory/thunk";
+import { arrow_down_big, checkbox, checkbox_active, noData } from "@svgImg";
+import routes from "@routes";
 
 const { height } = Dimensions.get('window')
 

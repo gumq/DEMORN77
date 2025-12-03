@@ -13,17 +13,17 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   InputDefault,
   CardModalSelect,
   AttachManyFile,
   RenderImage,
-} from 'components';
-import {close_red, close_white, trash} from 'svgImg';
-import {fetchListReference} from 'store/accHand_Over_Doc/thunk';
+} from '@components';
+import {close_red, close_white, trash} from '@svgImg';
+import {fetchListReference} from '@store/accHand_Over_Doc/thunk';
 
 const {height, width} = Dimensions.get('window');
 

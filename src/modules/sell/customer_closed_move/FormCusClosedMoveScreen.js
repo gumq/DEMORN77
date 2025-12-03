@@ -10,23 +10,23 @@ import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {View, Text, ScrollView, StatusBar, Alert, Platform} from 'react-native';
 
 import routes from '@routes';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {stylesDetail, stylesFormCusClosedMove} from './styles';
-import {arrow_down_big, arrow_next_gray, close_blue} from 'svgImg';
-import {fetchListEntryCredit} from 'store/accCredit_Limit/thunk';
+import {arrow_down_big, arrow_next_gray, close_blue} from '@svgImg';
+import {fetchListEntryCredit} from '@store/accCredit_Limit/thunk';
 import {
   fetchListCategoryTypeCusClosed,
   fetchListEntryMV,
-} from 'store/accCus_Closed_Move/thunk';
+} from '@store/accCus_Closed_Move/thunk';
 import {
   fetchListCustomerByUserID,
   fetchListUserByUserID,
-} from 'store/accAuth/thunk';
+} from '@store/accAuth/thunk';
 import {
   ApiCustomerArchived_Add,
   ApiCustomerArchived_Edit,
   ApiCustomerArchived_Submit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   CardModalSelect,
@@ -37,10 +37,10 @@ import {
   NotifierAlert,
   ModalCusClosedMove,
   AttachManyFile,
-} from 'components';
-import {fetchListUser} from 'store/accApproval_Signature/thunk';
-import {scale} from 'utils/resolutions';
-import { colors } from 'themes';
+} from '@components';
+import {fetchListUser} from '@store/accApproval_Signature/thunk';
+import {scale} from '@utils/resolutions';;
+import { colors } from '@themes';
 
 const FormCusClosedMoveScreen = ({route}) => {
   const item = route?.params?.item;

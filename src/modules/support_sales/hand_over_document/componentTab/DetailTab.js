@@ -4,12 +4,12 @@ import {useDispatch, useSelector} from 'react-redux';
 import {View, Text, FlatList, Dimensions} from 'react-native';
 
 import {ModalStepOne, ModalStepTwo} from '../modalApproval';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {stylesDetail, stylesFormHandOverDocument} from '../styles';
-import {fetchListDocumentTypes} from 'store/accHand_Over_Doc/thunk';
-import {Button, RenderImage} from 'components';
+import {fetchListDocumentTypes} from '@store/accHand_Over_Doc/thunk';
+import {Button, RenderImage} from '@components';
 import {SvgXml} from 'react-native-svg';
-import {arrow_down_big, arrow_next_gray} from 'svgImg';
+import {arrow_down_big, arrow_next_gray} from '@svgImg';
 
 const {width} = Dimensions.get('window');
 const DetailTab = ({detailHandOverDoc}) => {

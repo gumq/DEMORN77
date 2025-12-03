@@ -23,13 +23,13 @@ import {
 } from 'react-native';
 
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {translateLang} from 'store/accLanguages/slide';
-import {ApiCustomerProfiles_GetById} from 'action/Api';
+import routes from '@routes';
+import {translateLang} from '@store/accLanguages/slide';
+import {ApiCustomerProfiles_GetById} from '@api';
 import {
   fetchListCustomers,
   fetchListUser,
-} from 'store/accApproval_Signature/thunk';
+} from '@store/accApproval_Signature/thunk';
 import {
   Button,
   HeaderBack,
@@ -37,13 +37,13 @@ import {
   SearchBar,
   SearchModal,
   TabsHeaderDevices,
-} from 'components';
+} from '@components';
 import {
   fetchApiCustomerProfiles_GetCategoryCustomer,
   fetchListCategoryType,
   fetchListSalesTeam,
   fetchListWareHouse,
-} from 'store/accCustomer_Profile/thunk';
+} from '@store/accCustomer_Profile/thunk';
 import {
   address,
   checkbox,
@@ -52,14 +52,14 @@ import {
   noData,
   phone_green,
   plus_white,
-} from 'svgImg';
+} from '@svgImg';
 import {
   fetchListCustomerByUserID,
   fetchListUserByUserID,
-} from 'store/accAuth/thunk';
-import {scale} from 'utils/resolutions';
+} from '@store/accAuth/thunk';
+import {scale} from '@utils/resolutions';;
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import SearchModalKH from 'components/SearchModalKH';
+import SearchModalKH from '../../../components/SearchModalKH';
 const {height} = Dimensions.get('window');
 
 const CustomerProfileScreen = () => {

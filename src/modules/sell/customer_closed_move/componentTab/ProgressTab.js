@@ -1,13 +1,13 @@
 import React, {useMemo, useState} from 'react';
 import moment from 'moment';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {stylesProgress, styles} from '../styles';
 import {View, Text, FlatList, StyleSheet, TouchableOpacity} from 'react-native';
-import {arrow_down_big, arrow_next_gray, noData} from 'svgImg';
+import {arrow_down_big, arrow_next_gray, noData} from '@svgImg';
 import {SvgXml} from 'react-native-svg';
 import {useSelector} from 'react-redux';
-import {translateLang} from 'store/accLanguages/slide';
-import {scale} from 'utils/resolutions';
+import {translateLang} from '@store/accLanguages/slide';
+import {scale} from '@utils/resolutions';;
 
 const ProgressTab = ({detailCustomerClosedMove, dataBXD}) => {
   const languageKey = useSelector(translateLang);

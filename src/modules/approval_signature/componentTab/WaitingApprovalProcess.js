@@ -13,12 +13,12 @@ import {
 } from 'react-native';
 
 import {stylesAllApproval} from '../styles';
-import {noData} from 'svgImg';
+import {noData} from '@svgImg';
 import {Button, CardItemRenderFlat} from '@components';
-import {translateLang} from 'store/accLanguages/slide';
-import {fetchApprovalListProcess} from 'store/accApproval_Signature/thunk';
+import {translateLang} from '@store/accLanguages/slide';
+import {fetchApprovalListProcess} from '@store/accApproval_Signature/thunk';
 import {useNavigation} from '@react-navigation/native';
-import routes from 'modules/routes';
+import routes from '@routes';
 
 const {height} = Dimensions.get('window');
 const WaitingApprovalProcess = ({filterApprovalList}) => {

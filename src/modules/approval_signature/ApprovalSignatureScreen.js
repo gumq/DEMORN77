@@ -7,7 +7,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {View, StatusBar, ScrollView, LogBox} from 'react-native';
 import Pdf from 'react-native-pdf';
 import {styles} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   CardModalSelect,
   HeaderBack,
@@ -15,7 +15,7 @@ import {
   SearchBar,
   SearchModal,
   TabsHeaderDevices,
-} from 'components';
+} from '@components';
 import {
   AllApprovalProcess,
   Approved,
@@ -31,7 +31,7 @@ import {
   fetchListCustomers,
   fetchListFilter,
   fetchListUser,
-} from 'store/accApproval_Signature/thunk';
+} from '@store/accApproval_Signature/thunk';
 
 LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
 

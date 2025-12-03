@@ -2,10 +2,10 @@
 import React from 'react';
 import {View, Text, FlatList, TouchableOpacity, StyleSheet} from 'react-native';
 import moment from 'moment';
-import {scale} from 'utils/resolutions';
-import {colors, fontSize} from 'themes';
+import {scale} from '@utils/resolutions';;
+import {colors, fontSize} from '@themes';
 import {useSelector} from 'react-redux';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 
 /**
  * Expect item shape:

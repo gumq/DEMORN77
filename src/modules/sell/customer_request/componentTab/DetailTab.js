@@ -5,13 +5,13 @@ import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 import { View, Text } from 'react-native';
 
-import routes from "modules/routes";
+import routes from "@routes";
 import { stylesDetail } from "../styles";
-import { Button, NotifierAlert, RenderImage } from "components";
+import { Button, NotifierAlert, RenderImage } from "@components";
 import DynamicGeneralInfo from "./DynamicGeneralInfo";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { ModalStepFive, ModalStepThree, ModalStepTwo } from "../modalApproval";
-import { ApiCustomerRequests_Delete, ApiCustomerRequests_Submit } from "action/Api";
+import { ApiCustomerRequests_Delete, ApiCustomerRequests_Submit } from "@api";
 
 const DetailTab = ({ detailCusRequirement, itemData }) => {
     const languageKey = useSelector(translateLang);

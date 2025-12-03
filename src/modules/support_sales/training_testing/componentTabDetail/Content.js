@@ -11,11 +11,11 @@ import {
   Share,
 } from 'react-native';
 
-import {Button} from 'components';
+import {Button} from '@components';
 import {stylesContent, styles} from '../styles';
 import {SvgXml} from 'react-native-svg';
-import {downFile, noData, viewFile} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+import {downFile, noData, viewFile} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 import DocumentPicker from 'react-native-document-picker';
 const Content = ({detailTraining}) => {
   const languageKey = useSelector(translateLang);

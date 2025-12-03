@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
 import { stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, CardModalSelect, NotifierAlert, RadioButton } from "components";
-import { ApiTaskFuncs_Approval } from "action/Api";
-import routes from "modules/routes";
-import { fetchListUser } from "store/accApproval_Signature/thunk";
-import { fetchListDepartment } from "store/accCus_Requirement/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, CardModalSelect, NotifierAlert, RadioButton } from "@components";
+import { ApiTaskFuncs_Approval } from "@api";
+import routes from "@routes";
+import { fetchListUser } from "@store/accApproval_Signature/thunk";
+import { fetchListDepartment } from "@store/accCus_Requirement/thunk";
 
 const ModalApprovalStepOne = ({ setShowForm, isShowInforApproval }) => {
     const languageKey = useSelector(translateLang);

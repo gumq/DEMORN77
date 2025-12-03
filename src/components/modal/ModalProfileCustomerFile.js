@@ -16,11 +16,11 @@ import {
   Linking,
   Platform,
 } from 'react-native';
-import {colors, fontSize} from 'themes';
-import {ApiUploadFile} from 'action/Api';
+import {colors, fontSize} from '@themes';
+import {ApiUploadFile} from '@api';
 import {hScale, scale} from '@resolutions';
-import {Button} from 'components/buttons';
-import {translateLang} from 'store/accLanguages/slide';
+import {Button} from '@components/buttons';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   uploadFile_white,
   docFile,
@@ -29,7 +29,7 @@ import {
   viewFile_gray,
   downFile,
   trash,
-} from 'svgImg';
+} from '@svgImg';
 
 import ImagePicker from 'react-native-image-crop-picker';
 import {

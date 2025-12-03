@@ -1,12 +1,12 @@
 import React from "react";
 import moment from "moment";
-import { colors } from "themes";
+import { colors } from "@themes";
 import { stylesProgress, styles } from "../styles";
 import { View, Text, FlatList } from "react-native";
-import { noData } from "svgImg";
+import { noData } from "@svgImg";
 import { SvgXml } from "react-native-svg";
 import { useSelector } from "react-redux";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 
 const ProgressTab = ({ detailCostProposal }) => {
     const languageKey = useSelector(translateLang)

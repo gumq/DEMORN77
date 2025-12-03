@@ -6,15 +6,15 @@ import {useDispatch, useSelector} from 'react-redux';
 import {View, Text, FlatList, ScrollView} from 'react-native';
 
 import {stylesDetail} from '../styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {arrow_down_big, arrow_next_gray} from 'svgImg';
-import {Button, RenderImage} from 'components';
+import {translateLang} from '@store/accLanguages/slide';
+import {arrow_down_big, arrow_next_gray} from '@svgImg';
+import {Button, RenderImage} from '@components';
 import {
   fetchListSalesSubTeam,
   fetchListSalesTeam,
-} from 'store/accCustomer_Profile/thunk';
-import {ApiCustomerProfiles_GetById} from 'action/Api';
-import { colors } from 'themes';
+} from '@store/accCustomer_Profile/thunk';
+import {ApiCustomerProfiles_GetById} from '@api';
+import { colors } from '@themes';
 const DetailTab = ({detailCustomerClosedMove, itemData}) => {
   //  console.log('detailCustomerClosedMove',detailCustomerClosedMove)
   const languageKey = useSelector(translateLang);

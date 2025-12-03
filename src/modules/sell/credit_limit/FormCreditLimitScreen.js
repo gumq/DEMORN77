@@ -20,21 +20,21 @@ import {
 
 import routes from '@routes';
 import {stylesDetail, stylesFormCredit} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {arrow_down_big, arrow_next_gray, close_blue} from 'svgImg';
+import {translateLang} from '@store/accLanguages/slide';
+import {arrow_down_big, arrow_next_gray, close_blue} from '@svgImg';
 import {
   ApiCreditLimitProposal_Add,
   ApiCreditLimitProposal_Confirm,
   ApiCreditLimitProposal_Edit,
   ApiCreditLimitProposal_Submit,
   ApiCustomerProfiles_GetById,
-} from 'action/Api';
+} from '@api';
 import {
   fetchApiCreditLimitProposal_GetInfoGuarantee,
   fetchInformationSAP,
   fetchListDataFilter,
   fetchListEntryCredit,
-} from 'store/accCredit_Limit/thunk';
+} from '@store/accCredit_Limit/thunk';
 import {
   Button,
   CardModalSelect,
@@ -46,13 +46,13 @@ import {
   RadioButton,
   AttachManyFile,
   ModalProfileCustomerFile,
-} from 'components';
+} from '@components';
 import {
   fetchApiCompanyConfig_GetByUserID,
   fetchListCustomerByUserID,
-} from 'store/accAuth/thunk';
-import {fetchListCategoryTypeComplaint} from 'store/acc_Complaint_Warranties/thunk';
-import {scale} from 'utils/resolutions';
+} from '@store/accAuth/thunk';
+import {fetchListCategoryTypeComplaint} from '@store/acc_Complaint_Warranties/thunk';
+import {scale} from '@utils/resolutions';;
 import GuaranteeList from './componentTab/GuaranteeList';
 
 const FormCreditLimitScreen = ({route}) => {

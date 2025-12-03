@@ -20,15 +20,15 @@
 // } from 'react-native';
 
 // import {Button} from '../buttons';
-// import {colors, fontSize} from 'themes';
+// import {colors, fontSize} from '@themes';
 // import {hScale, scale} from '@resolutions';
-// import {translateLang} from 'store/accLanguages/slide';
+// import {translateLang} from '@store/accLanguages/slide';
 // import {
 //   InputDefault,
 //   Switch,
 //   CardModalSelect,
 //   ModalSelectDate,
-// } from 'components';
+// } from '@components';
 // import {
 //   cake_birthday,
 //   close_red,
@@ -37,7 +37,7 @@
 //   phone_green,
 //   three_dot,
 //   trash_22,
-// } from 'svgImg';
+// } from '@svgImg';
 
 // const {height} = Dimensions.get('window');
 
@@ -896,15 +896,15 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   InputDefault,
   Switch,
   CardModalSelect,
   ModalSelectDate,
-} from 'components';
+} from '@components';
 import {
   cake_birthday,
   close_red,
@@ -913,7 +913,7 @@ import {
   phone_green,
   three_dot,
   trash_22,
-} from 'svgImg';
+} from '@svgImg';
 
 const {height} = Dimensions.get('window');
 

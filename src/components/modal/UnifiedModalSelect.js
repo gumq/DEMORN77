@@ -3,10 +3,10 @@ import Modal from 'react-native-modal';
 import { View, Text, TouchableOpacity, Dimensions, StyleSheet, FlatList } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import SearchBar from '../SearchBar';
-import { close_blue, close_white, radio, radio_active } from 'svgImg';
+import { close_blue, close_white, radio, radio_active } from '@svgImg';
 import { scale, hScale } from '@resolutions';
-import { colors, fontSize } from 'themes';
-import SearchModal from 'components/SearchModal';
+import { colors, fontSize } from '@themes';
+import SearchModal from '@components/SearchModal';
 
 const { height } = Dimensions.get('window');
 

@@ -13,7 +13,7 @@
 // } from 'react-native';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 
-// import { Button } from 'components';
+// import { Button } from '@components';
 // import { colors, fontSize } from '@themes';
 // import { scale } from '@resolutions';
 
@@ -242,7 +242,7 @@ import {
 import Pdf from 'react-native-pdf';
 import WebView from 'react-native-webview';
 
-import {Button} from 'components';
+import {Button} from '@components';
 import {colors, fontSize} from '@themes';
 import {scale} from '@resolutions';
 

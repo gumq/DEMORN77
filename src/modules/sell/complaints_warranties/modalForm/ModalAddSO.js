@@ -6,14 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { View, Text, StyleSheet, ScrollView, Dimensions, FlatList } from "react-native";
 
 import ModalGoods from "./ModalGoods";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { close_red, close_white, trash_22 } from "svgImg";
-import { translateLang } from "store/accLanguages/slide";
-import { CardModalSelect, Button, ModalSelectDate, NotifierAlert } from "components";
-import { fetchDetailComplaintWarranties, fetchListItemBySO, fetchListNotOD, fetchListODBySO } from "store/acc_Complaint_Warranties/thunk";
+import { close_red, close_white, trash_22 } from "@svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { CardModalSelect, Button, ModalSelectDate, NotifierAlert } from "@components";
+import { fetchDetailComplaintWarranties, fetchListItemBySO, fetchListNotOD, fetchListODBySO } from "@store/acc_Complaint_Warranties/thunk";
 import moment from "moment";
-import { ApiComplaints_AddProfile, ApiComplaints_EditProfile, ApiComplaints_SubmitProfile } from "action/Api";
+import { ApiComplaints_AddProfile, ApiComplaints_EditProfile, ApiComplaints_SubmitProfile } from "@api";
 
 const { height } = Dimensions.get('window');
 

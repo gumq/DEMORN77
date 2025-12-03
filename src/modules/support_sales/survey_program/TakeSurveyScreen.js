@@ -7,14 +7,14 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, LogBox, Text, ToastAndroid, ScrollView } from "react-native";
 
-import { colors } from "themes";
-import routes from "modules/routes";
+import { colors } from "@themes";
+import routes from "@routes";
 import { styleTakeSurvey } from './styles'
-import { translateLang } from "store/accLanguages/slide";
-import { ApiMarketResearchs_SaveAnswer } from "action/Api";
-import { Button, HeaderBack, LoadingModal, QuestionRenderer } from "components";
-import { fetchListSurveyQuestions } from "store/accSurvey_Program/thunk";
-import { close_blue, next_blue, next_gray, previous_blue, previous_gray } from "svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { ApiMarketResearchs_SaveAnswer } from "@api";
+import { Button, HeaderBack, LoadingModal, QuestionRenderer } from "@components";
+import { fetchListSurveyQuestions } from "@store/accSurvey_Program/thunk";
+import { close_blue, next_blue, next_gray, previous_blue, previous_gray } from "@svgImg";
 
 const TakeSurveyScreen = ({ route }) => {
     const item = route?.params?.item;

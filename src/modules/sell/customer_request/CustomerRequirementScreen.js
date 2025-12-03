@@ -18,25 +18,25 @@ import {
 } from 'react-native';
 
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {noData, plus_white} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+import routes from '@routes';
+import {noData, plus_white} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   Button,
   HeaderBack,
   LoadingModal,
   SearchBar,
   SearchModal,
-} from 'components';
-import {fetchListCustomerByUserID} from 'store/accAuth/thunk';
+} from '@components';
+import {fetchListCustomerByUserID} from '@store/accAuth/thunk';
 import {
   fetchListCategoryTypeCusRequirement,
   fetchListCusRequirements,
   fetchListDepartment,
   fetchListEntry,
-} from 'store/accCus_Requirement/thunk';
-import {fetchListUser} from 'store/accApproval_Signature/thunk';
-import { scale } from 'utils/resolutions';
+} from '@store/accCus_Requirement/thunk';
+import {fetchListUser} from '@store/accApproval_Signature/thunk';
+import { scale } from '@utils/resolutions';
 
 const {height} = Dimensions.get('window');
 const CustomerRequirementScreen = () => {

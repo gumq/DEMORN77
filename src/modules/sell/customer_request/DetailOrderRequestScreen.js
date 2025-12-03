@@ -5,14 +5,14 @@ import LinearGradient from 'react-native-linear-gradient';
 import {View, StatusBar, ScrollView, Platform} from 'react-native';
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import {edit} from 'svgImg';
-import routes from 'modules/routes';
+import {edit} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {DetailTab, ProgressTab} from './componentTab';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {HeaderBack, LoadingModal, TabsHeaderDevices} from '@components';
-import {fetchDetailCusRequirement} from 'store/accCus_Requirement/thunk';
-import { scale } from 'utils/resolutions';
+import {fetchDetailCusRequirement} from '@store/accCus_Requirement/thunk';
+import { scale } from '@utils/resolutions';
 
 const DetailOrderRequestScreen = ({route, item}) => {
   const itemData = item || route?.params?.item;

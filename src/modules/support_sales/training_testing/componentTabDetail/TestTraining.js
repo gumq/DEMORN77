@@ -3,10 +3,10 @@ import { View, Text } from 'react-native';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
-import routes from "modules/routes";
-import { Button } from "components";
+import routes from "@routes";
+import { Button } from "@components";
 import { stylesTest } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 
 const TestTraining = ({ detailTraining }) => {
     const dispatch = useDispatch()

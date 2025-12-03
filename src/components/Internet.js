@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import NetInfo from '@react-native-community/netinfo';
 import { useSelector } from 'react-redux';
 
-import { translateLang } from 'store/accLanguages/slide';
+import { translateLang } from '@store/accLanguages/slide';
 import NotifierAlert from './NotifierAlert';
 
 const STATE = {

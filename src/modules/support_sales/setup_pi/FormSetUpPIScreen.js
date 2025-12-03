@@ -9,14 +9,14 @@ import { View, Text, TextInput, StatusBar, ScrollView, FlatList } from 'react-na
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import routes from "modules/routes";
+import routes from "@routes";
 import { stylesDetail } from "./styles";
-import { Button, HeaderBack, LoadingModal, ModalSelectDate, NotifierAlert } from "components";
-import { translateLang } from "store/accLanguages/slide";
-import { arrow_down_big, arrow_next_gray, open_envelope, trash_22 } from "svgImg";
-import { ApiPIAllocations_Edit, ApiPIAllocations_Submit } from "action/Api";
-import { hScale, scale } from "utils/resolutions";
-import { fetchDetailPI } from "store/accSetup_PI/thunk";
+import { Button, HeaderBack, LoadingModal, ModalSelectDate, NotifierAlert } from "@components";
+import { translateLang } from "@store/accLanguages/slide";
+import { arrow_down_big, arrow_next_gray, open_envelope, trash_22 } from "@svgImg";
+import { ApiPIAllocations_Edit, ApiPIAllocations_Submit } from "@api";
+import { hScale, scale } from "@resolutions";
+import { fetchDetailPI } from "@store/accSetup_PI/thunk";
 
 const FormSetUpPIScreen = ({ route }) => {
     const item = route?.params?.item;

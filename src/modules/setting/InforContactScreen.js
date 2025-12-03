@@ -10,9 +10,9 @@ import styles from './styles';
 import {Button, HeaderBack} from '../../components';
 import routes from '../routes';
 import {SvgXml} from 'react-native-svg';
-import {scale} from 'utils/resolutions';
-import { colors } from 'themes';
-import { chevronleft, close_blue } from 'svgImg';
+import {scale} from '@utils/resolutions';;
+import { colors } from '@themes';
+import { chevronleft, close_blue } from '@svgImg';
 
 const InforContactScreen = () => {
   const {inforCompany, userInfo} = useSelector(state => state.Login);

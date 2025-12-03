@@ -158,7 +158,7 @@ import {View, StyleSheet, TextInput, Text} from 'react-native';
 import {hScale, scale} from '@resolutions';
 import {colors, fontSize} from '@themes';
 import {SvgXml} from 'react-native-svg';
-import {arrow_down_big, checkgreen} from 'svgImg';
+import {arrow_down_big, checkgreen} from '@svgImg';
 
 const InputDefault = ({
   label,

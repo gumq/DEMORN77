@@ -18,25 +18,25 @@ import {
 } from 'react-native';
 
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {noData, plus_white} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+import routes from '@routes';
+import {noData, plus_white} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   Button,
   HeaderBack,
   LoadingModal,
   SearchBar,
   SearchModal,
-} from 'components';
+} from '@components';
 import {
   fetchListCategoryTypeQuote,
   fetchListProductQuote,
-} from 'store/accProduct_Quote/thunk';
+} from '@store/accProduct_Quote/thunk';
 import {
   fetchApiuser_GetCurrentUser,
   fetchListCustomerByUserID,
-} from 'store/accAuth/thunk';
-import { scale } from 'utils/resolutions';
+} from '@store/accAuth/thunk';
+import { scale } from '@utils/resolutions';
 
 const {height} = Dimensions.get('window');
 const ProductQuoteScreen = () => {

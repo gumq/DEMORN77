@@ -8,12 +8,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, ScrollView, LogBox, RefreshControl, FlatList, Dimensions, Text } from "react-native";
 
 import { styles } from './styles'
-import routes from "modules/routes";
-import { noData, plus_white } from "svgImg";
-import { translateLang } from "store/accLanguages/slide";
-import { fetchListAccountReceiver, fetchListPaymentRequest } from "store/accDeposit_Payment/thunk";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListCustomerByUserID } from "store/accAuth/thunk";
+import routes from "@routes";
+import { noData, plus_white } from "@svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchListAccountReceiver, fetchListPaymentRequest } from "@store/accDeposit_Payment/thunk";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListCustomerByUserID } from "@store/accAuth/thunk";
 
 const { height } = Dimensions.get('window')
 const DepositPaymentScreen = () => {

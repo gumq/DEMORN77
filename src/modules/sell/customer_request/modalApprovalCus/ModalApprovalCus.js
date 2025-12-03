@@ -4,10 +4,10 @@ import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
 import { stylesDetail, stylesFormOrderRequest } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, CardModalSelect, ModalSelectDate, NotifierAlert, RadioButton } from "components";
-import { ApiCustomerRequests_Submit } from "action/Api";
-import routes from "modules/routes";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, CardModalSelect, ModalSelectDate, NotifierAlert, RadioButton } from "@components";
+import { ApiCustomerRequests_Submit } from "@api";
+import routes from "@routes";
 
 const ModalApprovalCus = ({ setShowForm, isShowInforApproval }) => {
     const languageKey = useSelector(translateLang);

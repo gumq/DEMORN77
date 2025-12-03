@@ -6,8 +6,8 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { stylesDetail } from "./styles";
-import { HeaderBack, LoadingModal } from "components";
-import { fetchDetailVisitCustomer } from "store/accVisit_Customer/thunk";
+import { HeaderBack, LoadingModal } from "@components";
+import { fetchDetailVisitCustomer } from "@store/accVisit_Customer/thunk";
 import { TabCheckIn, TabCheckOut, TabInforBussiness, TabInforCompetitor, TabInventory, TabOpinionCustomer } from "./componentTab";
 
 const DetailVisitCustomer = ({ route }) => {

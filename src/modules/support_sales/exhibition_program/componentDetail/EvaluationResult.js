@@ -7,10 +7,10 @@ import Modal from 'react-native-modal';
 import { groupBy } from 'lodash';
 
 import { stylesCustomers, stylesDetail } from "../styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, RenderImage } from "components";
-import { ApiExhibitionEvaluations_GetByID } from "action/Api";
-import { checkbox_active } from "svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, RenderImage } from "@components";
+import { ApiExhibitionEvaluations_GetByID } from "@api";
+import { checkbox_active } from "@svgImg";
 
 const EvaluationResult = ({ detailExhibitionPrograms }) => {
     const languageKey = useSelector(translateLang);

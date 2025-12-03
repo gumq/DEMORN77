@@ -17,17 +17,17 @@ import {
 } from 'react-native';
 
 import routes from '@routes';
-import {trash} from 'svgImg';
+import {trash} from '@svgImg';
 import {scale} from '@resolutions';
 import {stylesFormDetail} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {Button, CustomPicker, HeaderBack, NotifierAlert} from 'components';
+import {translateLang} from '@store/accLanguages/slide';
+import {Button, CustomPicker, HeaderBack, NotifierAlert} from '@components';
 import {
   ApiPlanForUsers_AddDetail,
   ApiPlanForUsers_AddPlan,
   ApiPlanForUsers_EditPlan,
   ApiPlanForUsers_SubmitPlan,
-} from 'action/Api';
+} from '@api';
 
 const FormPlanDetailCustomer = ({route}) => {
   const item = route?.params?.item;

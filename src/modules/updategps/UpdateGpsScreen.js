@@ -28,12 +28,12 @@ import {
   openSettings,
 } from 'react-native-permissions';
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {translateLang} from 'store/accLanguages/slide';
+import routes from '@routes';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   ApiCustomerProfiles_GetById,
   ApiCustomerProfiles_UpdateGPS,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   HeaderBack,
@@ -42,16 +42,16 @@ import {
   NotifierAlert,
   SearchBar,
   TabsHeaderDevices,
-} from 'components';
-import {noData, plus_white} from 'svgImg';
-import {fetchListCustomerByUserID} from 'store/accAuth/thunk';
-import {scale} from 'utils/resolutions';
+} from '@components';
+import {noData, plus_white} from '@svgImg';
+import {fetchListCustomerByUserID} from '@store/accAuth/thunk';
+import {scale} from '@utils/resolutions';;
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import SearchModalKH from 'components/SearchModalKH';
+import SearchModalKH from '../../components/SearchModalKH';
 import moment, {lang} from 'moment';
 const {height} = Dimensions.get('window');
 
-const UpdateGpsScreen = () => {
+const UpdateGpsScreen = () => { d
   const insets = useSafeAreaInsets();
   const dispatch = useDispatch();
   const navigation = useNavigation();

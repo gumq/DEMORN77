@@ -7,10 +7,10 @@ import { noData } from '@svgImg'
 import styles from '../styles';
 import { colors } from "@themes";
 import { ApiDeleteNoti, ApiUpdateViewNoti } from "@api";
-import { translateLang } from "store/accLanguages/slide";
-import { fetchListNotify, fetchTotalNotify } from "store/accNotify/thunk";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchListNotify, fetchTotalNotify } from "@store/accNotify/thunk";
 import { useNavigation } from "@react-navigation/native";
-import routes from "modules/routes";
+import routes from "@routes";
 
 const NotReadNotify = ({ listNotify }) => {
     const dispatch = useDispatch();

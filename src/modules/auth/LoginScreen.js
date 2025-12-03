@@ -9,8 +9,8 @@ import {View, StatusBar, ImageBackground, Text, Platform} from 'react-native';
 
 import styles from './styles';
 import routes from '@routes';
-import {updateUser} from 'store/accAuth/slide';
-import {translateLang} from 'store/accLanguages/slide';
+import {updateUser} from '@store/accAuth/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {ApiAddTokenFirebase, ApiCheckTokenAppValid, ApiLogin} from '@api';
 import {
   Button,
@@ -18,7 +18,7 @@ import {
   NotifierAlert,
   LoadingModal,
   InputLogin,
-} from 'components';
+} from '@components';
 import {
   getToken,
   getFcmInfo,

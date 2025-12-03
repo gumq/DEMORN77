@@ -15,18 +15,18 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   checkbox_20,
   checkbox_active_20,
   close_red,
   close_white,
   trash_22,
-} from 'svgImg';
-import {ApiQuotation_EditPrice, ApiQuotation_GetItems} from 'action/Api';
-import LoadingModal from 'components/LoadingModal';
+} from '@svgImg';
+import {ApiQuotation_EditPrice, ApiQuotation_GetItems} from '@api';
+import LoadingModal from '@components/LoadingModal';
 import {InputDefault} from 'components/inputs';
 import {useFormik} from 'formik';
 

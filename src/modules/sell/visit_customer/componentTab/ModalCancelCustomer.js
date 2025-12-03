@@ -4,12 +4,12 @@ import Modal from 'react-native-modal';
 import { useDispatch, useSelector } from "react-redux";
 import { View, Text, StyleSheet, ScrollView, Alert, Platform } from "react-native";
 
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { ApiVisitForUsers_Cancel } from "action/Api";
-import { translateLang } from "store/accLanguages/slide";
-import { fetchListCancelReason, fetchListVisitCustomer } from "store/accVisit_Customer/thunk";
-import { InputDefault, CardModalSelect, Button, AttachManyFile, NotifierAlert } from "components";
+import { ApiVisitForUsers_Cancel } from "@api";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchListCancelReason, fetchListVisitCustomer } from "@store/accVisit_Customer/thunk";
+import { InputDefault, CardModalSelect, Button, AttachManyFile, NotifierAlert } from "@components";
 
 const ModalCancelCustomer = ({
     parentID,

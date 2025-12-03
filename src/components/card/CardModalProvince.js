@@ -14,10 +14,10 @@ import {
 
 import {Button} from '../buttons';
 import SearchBar from '../SearchBar';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import SearchModal from 'components/SearchModal';
-import {arrow_down, close_blue, close_white, radio, radio_active} from 'svgImg';
+import SearchModal from '@components/SearchModal';
+import {arrow_down, close_blue, close_white, radio, radio_active} from '@svgImg';
 
 const {height} = Dimensions.get('window');
 

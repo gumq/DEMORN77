@@ -5,13 +5,13 @@ import LinearGradient from 'react-native-linear-gradient';
 import {View, StatusBar, ScrollView} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
-import {edit} from 'svgImg';
-import routes from 'modules/routes';
+import {edit} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {DetailTab, ProgressTab} from './componentTab';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {HeaderBack, LoadingModal, TabsHeaderDevices} from '@components';
-import {fetchDetailHandOverDoc} from 'store/accHand_Over_Doc/thunk';
+import {fetchDetailHandOverDoc} from '@store/accHand_Over_Doc/thunk';
 
 const DetailHandOverDocScreen = ({route, item}) => {
   const itemData = item || route?.params?.item;

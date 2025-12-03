@@ -5,13 +5,13 @@ import { SvgXml } from "react-native-svg";
 import { View, Text, TextInput, FlatList, Alert } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
-import { trash } from "svgImg";
+import { trash } from "@svgImg";
 import { stylesDetail } from "../styles";
-import { ApiVisitForUsers_AddInventory } from "action/Api";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, CardModalSelect, NotifierAlert } from "components";
-import { fetchDetailVisitCustomer, fetchListProducts, fetchListUnitProducts } from "store/accVisit_Customer/thunk";
-import { colors } from "themes";
+import { ApiVisitForUsers_AddInventory } from "@api";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, CardModalSelect, NotifierAlert } from "@components";
+import { fetchDetailVisitCustomer, fetchListProducts, fetchListUnitProducts } from "@store/accVisit_Customer/thunk";
+import { colors } from "@themes";
 
 const TabInventory = ({ item }) => {
     const languageKey = useSelector(translateLang);

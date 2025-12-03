@@ -5,13 +5,13 @@ import LinearGradient from "react-native-linear-gradient";
 import { View, StatusBar, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { edit } from "svgImg";
-import routes from "modules/routes";
+import { edit } from "@svgImg";
+import routes from "@routes";
 import { stylesDetail } from './styles';
 import { DetailTab, ProgressTab } from "./componentTab";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { HeaderBack, LoadingModal, TabsHeaderDevices } from "@components";
-import { fetchDetailCostProposal } from "store/accCost_Proposal/thunk";
+import { fetchDetailCostProposal } from "@store/accCost_Proposal/thunk";
 
 const DetailOrderRequestScreen = ({ route, item }) => {
     const itemData = item || route?.params?.item;

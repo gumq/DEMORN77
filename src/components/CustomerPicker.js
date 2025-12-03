@@ -9,11 +9,11 @@ import {
     TouchableWithoutFeedback,
 } from "react-native";
 import { useSelector } from "react-redux";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { SvgXml } from "react-native-svg";
-import { arrow_down, arrow_right } from "svgImg";
+import { arrow_down, arrow_right } from "@svgImg";
 
 const CustomPicker = ({ data, selectedCustomers, onSelectCustomer }) => {
     const languageKey = useSelector(translateLang);

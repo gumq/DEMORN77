@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, Platform, StatusBar } from 'react-native';
 import { Notifier } from 'react-native-notifier';
-import { colors, fontSize } from 'themes';
-import { scale } from 'utils/resolutions';
+import { colors, fontSize } from '@themes';
+import { scale } from '@utils/resolutions';
 
 if (Platform.OS === 'android') {
   StatusBar.setTranslucent(true);

@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { hScale, scale } from "@resolutions";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import moment from "moment";
 
 const ApprovalProgress = ({ detailApprovalListProcess }) => {

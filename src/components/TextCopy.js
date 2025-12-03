@@ -9,8 +9,8 @@ import {
   Pressable,
 } from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {scale} from 'utils/resolutions';
-import {fontSize} from 'themes';
+import {scale} from '@utils/resolutions';;
+import {fontSize} from '@themes';
 import NotifierAlert from './NotifierAlert';
 
 const TextCopy = ({

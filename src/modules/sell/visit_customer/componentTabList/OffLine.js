@@ -4,13 +4,13 @@ import { SvgXml } from "react-native-svg";
 import { useDispatch, useSelector } from "react-redux";
 import { View, Text, ScrollView, FlatList, RefreshControl, Dimensions } from 'react-native';
 
-import routes from "modules/routes";
+import routes from "@routes";
 import { styles } from "../styles";
-import { cancel_plan, noData } from "svgImg";
+import { cancel_plan, noData } from "@svgImg";
 import { Button } from "@components";
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { useNavigation } from "@react-navigation/native";
-import { fetchListVisitCustomer } from "store/accVisit_Customer/thunk";
+import { fetchListVisitCustomer } from "@store/accVisit_Customer/thunk";
 import ModalCancelCustomer from "../componentTab/ModalCancelCustomer";
 
 const { height } = Dimensions.get('window');

@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { View, Text, FlatList } from "react-native";
 
 import { stylesDetail } from '../styles'
-import { translateLang } from "store/accLanguages/slide";
-import { fetchDetailTraining, fetchListTrainingQuestions } from "store/accTraining_Testing/thunk";
-import { noData } from "svgImg";
+import { translateLang } from "@store/accLanguages/slide";
+import { fetchDetailTraining, fetchListTrainingQuestions } from "@store/accTraining_Testing/thunk";
+import { noData } from "@svgImg";
 import { SvgXml } from "react-native-svg";
 
 const DetailTestingScreen = ({ route }) => {

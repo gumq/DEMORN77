@@ -2,9 +2,9 @@
 import React, {useState} from 'react';
 import {TouchableOpacity, Text, View} from 'react-native';
 import {SvgXml} from 'react-native-svg';
-import {checkbox, checkbox_active} from 'svgImg';
-import {colors, fontSize} from 'themes';
-import {scale} from 'utils/resolutions';
+import {checkbox, checkbox_active} from '@svgImg';
+import {colors, fontSize} from '@themes';
+import {scale} from '@utils/resolutions';;
 
 const ToggleCheckBox = ({label, value, onChange, disable = false}) => {
   return (

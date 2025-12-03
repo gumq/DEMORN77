@@ -1,14 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useMemo, useState} from 'react';
 import moment from 'moment';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {stylesProgress, stylesAllApproval} from '../styles';
 import {View, Text, FlatList, Platform} from 'react-native';
-import {noData} from 'svgImg';
+import {noData} from '@svgImg';
 import {SvgXml} from 'react-native-svg';
 import {useSelector} from 'react-redux';
-import {translateLang} from 'store/accLanguages/slide';
-import {scale} from 'utils/resolutions';
+import {translateLang} from '@store/accLanguages/slide';
+import {scale} from '@utils/resolutions';;
 
 const ProgressTab = ({itemData}) => {
   const languageKey = useSelector(translateLang);

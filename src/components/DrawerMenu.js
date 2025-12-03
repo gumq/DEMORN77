@@ -16,10 +16,10 @@ import {
   sell,
   other_request
 } from '@svgImg';
-import { updateDetailMenu } from 'store/accHome/slide';
+import { updateDetailMenu } from '@store/accHome/slide';
 import { isIphoneX } from 'react-native-iphone-x-helper';
 import DeviceInfo from 'react-native-device-info';
-import { translateLang } from 'store/accLanguages/slide';
+import { translateLang } from '@store/accLanguages/slide';
 
 const WIDTH_DRAWER = Dimensions.get('window').width / 1.1;
 

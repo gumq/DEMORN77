@@ -16,7 +16,7 @@ import {close_blue, gps, local_current} from '@svgImg';
 import {Button} from '@components';
 import {colors, fontSize} from '../../themes';
 import {hScale, scale} from '../../utils/resolutions';
-import html_script from 'modules/layermap/html_script';
+import html_script from '../../modules/layermap/html_script';
 import {isIphoneX} from 'react-native-iphone-x-helper';
 
 const InputLocationAlone = forwardRef(

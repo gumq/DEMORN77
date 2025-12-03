@@ -15,10 +15,10 @@ import {
 } from 'react-native';
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import {close_red, close_white, edit} from 'svgImg';
-import {colors, fontSize} from 'themes';
-import routes from 'modules/routes';
-import {translateLang} from 'store/accLanguages/slide';
+import {close_red, close_white, edit} from '@svgImg';
+import {colors, fontSize} from '@themes';
+import routes from '@routes';
+import {translateLang} from '@store/accLanguages/slide';
 import {Detail, ApprovalProgress} from './componentTabDetail';
 import {
   Button,
@@ -27,14 +27,14 @@ import {
   NotifierAlert,
   RadioButton,
   TabsHeaderDevices,
-} from 'components';
-import {fetchDetailApprovalListProcess} from 'store/accApproval_Signature/thunk';
+} from '@components';
+import {fetchDetailApprovalListProcess} from '@store/accApproval_Signature/thunk';
 import {
   fetchListCustomerForPlan,
   fetchListSalesRoutes,
-} from 'store/accVisit_Customer/thunk';
-import {hScale, scale} from 'utils/resolutions';
-import {ApiGeneralApprovals_ApprovalList} from 'action/Api';
+} from '@store/accVisit_Customer/thunk';
+import {hScale, scale} from '@utils/resolutions';
+import {ApiGeneralApprovals_ApprovalList} from '@api';
 
 const {height, width} = Dimensions.get('window');
 

@@ -13,14 +13,14 @@ import {
 } from 'react-native';
 import Modal from 'react-native-modal';
 import {stylesDetail} from '../styles';
-import {translateLang} from 'store/accLanguages/slide';
-import {wScale} from 'utils/resolutions';
+import {translateLang} from '@store/accLanguages/slide';
+import {wScale} from '@utils/resolutions';;
 import {
   fetchApiExportPDF_ExportPDF,
   fetchApiv2_OtherApprovals_GetByID,
-} from 'store/accApproval_Signature/thunk';
+} from '@store/accApproval_Signature/thunk';
 import {SvgXml} from 'react-native-svg';
-import {close, downFile, extend} from 'svgImg';
+import {close, downFile, extend} from '@svgImg';
 import RNFS from 'react-native-fs';
 
 // Thay WebView bằng react-native-pdf

@@ -19,30 +19,30 @@ import {
 } from 'react-native';
 
 import {Button} from '../buttons';
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   InputDefault,
   CardModalSelect,
   AttachManyFile,
   RenderImage,
-} from 'components';
+} from '@components';
 import {
   arrow_down_big,
   arrow_next_gray,
   close_red,
   close_white,
   trash,
-} from 'svgImg';
+} from '@svgImg';
 import {
   fetchDetailUserID,
   fetchListSalesSubTeam,
   fetchListSalesTeam,
   fetchListSalesVBH,
-} from 'store/accCustomer_Profile/thunk';
-import {fetchCustomerByCode} from 'store/accCus_Closed_Move/thunk';
-import {updateCustomerByCode} from 'store/accCus_Closed_Move/slide';
+} from '@store/accCustomer_Profile/thunk';
+import {fetchCustomerByCode} from '@store/accCus_Closed_Move/thunk';
+import {updateCustomerByCode} from '@store/accCus_Closed_Move/slide';
 
 const {height, width} = Dimensions.get('window');
 

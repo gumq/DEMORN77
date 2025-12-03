@@ -9,7 +9,7 @@ import {scale, hScale} from '@resolutions';
 import {colors, fontSize} from '@themes';
 import {Button} from '../buttons';
 import DrawerMenu from '../DrawerMenu';
-import {fetchTotalNotify} from 'store/accNotify/thunk';
+import {fetchTotalNotify} from '@store/accNotify/thunk';
 import routes from '@routes';
 import SearchBar from '../SearchBar';
 

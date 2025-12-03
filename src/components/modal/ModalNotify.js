@@ -4,7 +4,7 @@ import Modal from 'react-native-modal';
 import {useSelector} from 'react-redux';
 
 import {colors, fontSize} from '@themes';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {hScale, scale} from '@resolutions';
 import {Button} from '../buttons';
 

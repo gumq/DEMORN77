@@ -14,14 +14,14 @@
 // import {SvgXml} from 'react-native-svg';
 // import Modal from 'react-native-modal';
 
-// import {colors, fontSize} from 'themes';
-// import {hScale, scale} from 'utils/resolutions';
-// import SearchBar from 'components/SearchBar';
-// import {Button} from 'components/buttons';
-// import {arrow_down, close_blue, close_white, radio, radio_active} from 'svgImg';
+// import {colors, fontSize} from '@themes';
+// import {hScale, scale} from '@utils/resolutions';;
+// import SearchBar from '@components/SearchBar';
+// import {Button} from '@components/buttons';
+// import {arrow_down, close_blue, close_white, radio, radio_active} from '@svgImg';
 // import {useSelector} from 'react-redux';
-// import {translateLang} from 'store/accLanguages/slide';
-// import SearchModal from 'components/SearchModal';
+// import {translateLang} from '@store/accLanguages/slide';
+// import SearchModal from '@components/SearchModal';
 
 // const {width, height} = Dimensions.get('window');
 
@@ -528,14 +528,14 @@ import {
 import {SvgXml} from 'react-native-svg';
 import Modal from 'react-native-modal';
 
-import {colors, fontSize} from 'themes';
-import {hScale, scale} from 'utils/resolutions';
-import SearchBar from 'components/SearchBar';
-import {Button} from 'components/buttons';
-import {arrow_down, close_blue, close_white, radio, radio_active} from 'svgImg';
+import {colors, fontSize} from '@themes';
+import {hScale, scale} from '@utils/resolutions';
+import SearchBar from '@components/SearchBar';
+import {Button} from '@components/buttons';
+import {arrow_down, close_blue, close_white, radio, radio_active} from '@svgImg';
 import {useSelector} from 'react-redux';
-import {translateLang} from 'store/accLanguages/slide';
-import SearchModal from 'components/SearchModal';
+import {translateLang} from '@store/accLanguages/slide';
+import SearchModal from '@components/SearchModal';
 
 const {width, height} = Dimensions.get('window');
 

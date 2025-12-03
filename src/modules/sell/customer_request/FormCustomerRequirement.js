@@ -16,19 +16,19 @@ import {
 } from 'react-native';
 
 import routes from '@routes';
-import {close_blue} from 'svgImg';
+import {close_blue} from '@svgImg';
 import {stylesFormOrderRequest} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   fetchCodeProduct,
   fetchDataGoodsTypes,
   fetchListGoodsTypes,
-} from 'store/accCus_Requirement/thunk';
+} from '@store/accCus_Requirement/thunk';
 import {
   ApiCustomerRequests_Add,
   ApiCustomerRequests_Edit,
   ApiCustomerRequests_Submit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   CardModalSelect,
@@ -40,8 +40,8 @@ import {
   AttachManyFile,
   CardModalSelectTrigger,
   UnifiedModalSelect,
-} from 'components';
-import { scale } from 'utils/resolutions';
+} from '@components';
+import { scale } from '@utils/resolutions';
 
 const FormCustomerRequirement = ({route}) => {
   const editOrder = route?.params?.editOrder;

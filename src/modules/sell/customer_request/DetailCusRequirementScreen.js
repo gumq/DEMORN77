@@ -7,14 +7,14 @@ import LinearGradient from 'react-native-linear-gradient';
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {View, StatusBar, ScrollView, Text, Platform} from 'react-native';
 
-import {edit} from 'svgImg';
-import routes from 'modules/routes';
+import {edit} from '@svgImg';
+import routes from '@routes';
 import {stylesDetail} from './styles';
 import {HeaderBack, LoadingModal, RenderImage} from '@components';
-import {translateLang} from 'store/accLanguages/slide';
-import {fetchDetailCusRequirement} from 'store/accCus_Requirement/thunk';
+import {translateLang} from '@store/accLanguages/slide';
+import {fetchDetailCusRequirement} from '@store/accCus_Requirement/thunk';
 import {ModalApprovalCus, ModalApprovalStepTwo} from './modalApprovalCus';
-import { scale } from 'utils/resolutions';
+import { scale } from '@utils/resolutions';
 const DetailCusRequirementScreen = ({route, item}) => {
   const itemData = item || route?.params?.item;
   const dispatch = useDispatch();

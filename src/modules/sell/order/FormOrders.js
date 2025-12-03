@@ -22,7 +22,7 @@ import {Swipeable} from 'react-native-gesture-handler';
 import moment from 'moment';
 import routes from '@routes';
 import {stylesFormOrder, stylesDetail} from './styles';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   arrow_down_big,
   arrow_next_gray,
@@ -31,13 +31,13 @@ import {
   edit,
   svgi,
   trash_22,
-} from 'svgImg';
+} from '@svgImg';
 import {
   ApiOrders_CheckInventory,
   ApiSaleOrder_Submit,
   ApiSaleOrders_Add,
   ApiSaleOrders_Edit,
-} from 'action/Api';
+} from '@api';
 import {
   Button,
   CardModalSelect,
@@ -46,7 +46,7 @@ import {
   ModalNotify,
   NotifierAlert,
   ModalGoods,
-} from 'components';
+} from '@components';
 import {
   fetchListAddress,
   fetchListFactorID,
@@ -54,15 +54,15 @@ import {
   fetchListQuoteContractNumber,
   fetchListTypeOfOrder,
   fetchListWareHouse,
-} from 'store/accOrders/thunk';
+} from '@store/accOrders/thunk';
 import {
   fetchApiCustomerProfiles_GetInfo,
   fetchInformationSAP,
   fetchListCreditLimit,
-} from 'store/accCredit_Limit/thunk';
-import {fetchListCustomerByUserID} from 'store/accAuth/thunk';
-import {hScale, scale} from 'utils/resolutions';
-import {colors, fontSize} from 'themes';
+} from '@store/accCredit_Limit/thunk';
+import {fetchListCustomerByUserID} from '@store/accAuth/thunk';
+import {hScale, scale} from '@utils/resolutions';
+import {colors, fontSize} from '@themes';
 
 const FormOrder = ({route}) => {
   const editOrder = route?.params?.editOrder;

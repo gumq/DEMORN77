@@ -7,13 +7,13 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, Text, TouchableOpacity, FlatList, Image, ScrollView, Dimensions } from "react-native";
 
-import { colors } from "themes";
+import { colors } from "@themes";
 import { styles } from "./styles";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { arrow_right_blue } from "svgImg";
-import routes from "modules/routes";
-import { scale } from "utils/resolutions";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { arrow_right_blue } from "@svgImg";
+import routes from "@routes";
+import { scale } from "@resolutions";
 
 const DetailPostTypeScreen = ({ route }) => {
     const item = route?.params?.item;

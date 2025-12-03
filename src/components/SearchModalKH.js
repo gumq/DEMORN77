@@ -1,4 +1,4 @@
-import { convertVi } from '@utils';
+import { convertVi } from '@utils/resolutions';;
 
 /**
  * SearchModal: tìm trong `data` (array) theo `value` (string)

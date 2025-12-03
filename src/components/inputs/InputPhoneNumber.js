@@ -9,9 +9,9 @@
 //   StyleSheet,
 // } from 'react-native';
 // import {SvgXml} from 'react-native-svg';
-// import {minus_circle, plus_circle} from 'svgImg';
-// import {colors, fontSize} from 'themes';
-// import {hScale, scale} from 'utils/resolutions';
+// import {minus_circle, plus_circle} from '@svgImg';
+// import {colors, fontSize} from '@themes';
+// import {hScale, scale} from '@utils/resolutions';;
 
 // const InputPhoneNumber = ({
 //   setListPhoneNumber,
@@ -173,9 +173,9 @@ import {
   StyleSheet,
 } from 'react-native';
 import {SvgXml} from 'react-native-svg';
-import {minus_circle, plus_circle} from 'svgImg';
-import {colors, fontSize} from 'themes';
-import {hScale, scale} from 'utils/resolutions';
+import {minus_circle, plus_circle} from '@svgImg';
+import {colors, fontSize} from '@themes';
+import {hScale, scale} from '@utils/resolutions';
 
 const InputPhoneNumber = ({
   setListPhoneNumber,

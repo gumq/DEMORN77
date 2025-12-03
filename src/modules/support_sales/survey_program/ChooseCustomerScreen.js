@@ -7,13 +7,13 @@ import LinearGradient from "react-native-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, ScrollView, LogBox, RefreshControl, FlatList, Text, TouchableOpacity } from "react-native";
 
-import { noData, radio, radio_active } from "svgImg";
+import { noData, radio, radio_active } from "@svgImg";
 import { styles } from './styles'
-import routes from "modules/routes";
-import { translateLang } from "store/accLanguages/slide";
-import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "components";
-import { fetchListCustomerByUserID } from "store/accAuth/thunk";
-import { NewCustomer } from "modules/sell/visit_customer/componentTab";
+import routes from "@routes";
+import { translateLang } from "@store/accLanguages/slide";
+import { Button, HeaderBack, LoadingModal, SearchBar, SearchModal } from "@components";
+import { fetchListCustomerByUserID } from "@store/accAuth/thunk";
+import { NewCustomer } from "../../../modules/sell/visit_customer/componentTab";
 
 const ChooseCustomerScreen = ({ route }) => {
     const dispatch = useDispatch();

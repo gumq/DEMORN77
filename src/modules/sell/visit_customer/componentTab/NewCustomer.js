@@ -12,9 +12,9 @@ import {
 } from 'react-native-permissions';
 import {View, Text, StyleSheet, Alert, Platform} from 'react-native';
 
-import {colors, fontSize} from 'themes';
+import {colors, fontSize} from '@themes';
 import {hScale, scale} from '@resolutions';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   InputDefault,
   Button,
@@ -23,13 +23,13 @@ import {
   CardModalProvince,
   InputLocation,
   InputPhoneNumber,
-} from 'components';
-import {ApiCustomerProfiles_Add, ApiVisitForUsers_OFFRoute} from 'action/Api';
+} from '@components';
+import {ApiCustomerProfiles_Add, ApiVisitForUsers_OFFRoute} from '@api';
 import {
   fetchListProvinceCity,
   fetchListWardCommune,
-} from 'store/accCustomer_Profile/thunk';
-import {fetchListCustomerOffRoute} from 'store/accVisit_Customer/thunk';
+} from '@store/accCustomer_Profile/thunk';
+import {fetchListCustomerOffRoute} from '@store/accVisit_Customer/thunk';
 
 const NewCustomer = ({parentID, closeModal, reason}) => {
   const languageKey = useSelector(translateLang);

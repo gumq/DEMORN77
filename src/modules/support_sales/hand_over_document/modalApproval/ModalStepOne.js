@@ -4,10 +4,10 @@ import { useNavigation } from "@react-navigation/native";
 
 import { stylesDetail } from "../styles";
 import { useSelector } from "react-redux";
-import routes from "modules/routes";
-import { translateLang } from "store/accLanguages/slide";
-import { AttachManyFile, Button, NotifierAlert, RadioButton } from "components";
-import { ApiGeneralApprovals_ApprovalList } from "action/Api";
+import routes from "@routes";
+import { translateLang } from "@store/accLanguages/slide";
+import { AttachManyFile, Button, NotifierAlert, RadioButton } from "@components";
+import { ApiGeneralApprovals_ApprovalList } from "@api";
 
 const ModalStepOne = ({ isShowInforApproval, setShowForm }) => {
     const languageKey = useSelector(translateLang);

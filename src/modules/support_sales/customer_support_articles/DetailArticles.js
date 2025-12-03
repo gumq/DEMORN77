@@ -7,11 +7,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { View, StatusBar, Image, Text, ScrollView, Dimensions } from "react-native";
 
 import { styles } from './styles'
-import { translateLang } from "store/accLanguages/slide";
+import { translateLang } from "@store/accLanguages/slide";
 import { HeaderBack, LoadingModal } from "@components";
-import { fetchDetailSupportArticles } from "store/accCustomer_Support_Articles/thunk";
+import { fetchDetailSupportArticles } from "@store/accCustomer_Support_Articles/thunk";
 import moment from "moment";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 
 const { width } = Dimensions.get('window')
 

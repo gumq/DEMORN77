@@ -5,10 +5,10 @@ import { useSelector } from "react-redux";
 import { View, Text, StyleSheet, Dimensions, ScrollView} from "react-native";
 
 import { Button } from "../buttons";
-import { colors, fontSize } from "themes";
+import { colors, fontSize } from "@themes";
 import { hScale, scale } from "@resolutions";
-import { translateLang } from "store/accLanguages/slide";
-import { InputDefault, CardModalSelect, AttachManyFile } from "components";
+import { translateLang } from "@store/accLanguages/slide";
+import { InputDefault, CardModalSelect, AttachManyFile } from "@components";
 
 const { height } = Dimensions.get('window');
 const ModalCostProposal = ({

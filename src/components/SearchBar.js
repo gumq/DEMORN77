@@ -6,7 +6,7 @@ import {useSelector} from 'react-redux';
 import {search} from '@svgImg';
 import {scale} from '@resolutions';
 import {colors, fontSize} from '@themes';
-import {translateLang} from 'store/accLanguages/slide';
+import {translateLang} from '@store/accLanguages/slide';
 
 const SearchBar = ({style, tree = false, ...rest}) => {
   const languageKey = useSelector(translateLang);

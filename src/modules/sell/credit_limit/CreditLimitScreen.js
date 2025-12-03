@@ -18,29 +18,29 @@ import {
 } from 'react-native';
 
 import {styles} from './styles';
-import routes from 'modules/routes';
-import {noData, plus_white} from 'svgImg';
-import {translateLang} from 'store/accLanguages/slide';
+import routes from '@routes';
+import {noData, plus_white} from '@svgImg';
+import {translateLang} from '@store/accLanguages/slide';
 import {
   fetchListCategoryType,
   fetchListCreditLimit,
-} from 'store/accCredit_Limit/thunk';
+} from '@store/accCredit_Limit/thunk';
 import {
   Button,
   HeaderBack,
   LoadingModal,
   SearchBar,
   SearchModal,
-} from 'components';
+} from '@components';
 import {
   fetchApiCompanyConfig_GetByUserID,
   fetchApiuser_GetCurrentUser,
   fetchListCustomerByUserID,
   fetchListUserByUserID,
-} from 'store/accAuth/thunk';
-import {fetchListFactorID} from 'store/accOrders/thunk';
-import {scale} from 'utils/resolutions';
-import {fetchListItemType} from 'store/accCustomer_Profile/thunk';
+} from '@store/accAuth/thunk';
+import {fetchListFactorID} from '@store/accOrders/thunk';
+import {scale} from '@utils/resolutions';;
+import {fetchListItemType} from '@store/accCustomer_Profile/thunk';
 
 const {height} = Dimensions.get('window');
 const CreditLimitScreen = () => {
